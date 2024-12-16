@@ -19,20 +19,32 @@ namespace PharmacyManagementSystem.View.Goods
         // Open form child
         private void OpenChildForm(Form childForm)
         {
-            // Lấy tọa độ tuyệt đối của Panel
-            Point panelLocation = pnLeft.PointToScreen(Point.Empty);
+            // Đặt vị trí xuất hiện của form con là chính giữa form chính
+            childForm.StartPosition = FormStartPosition.Manual; // Đặt chế độ thủ công
+            childForm.Location = new Point(
+                this.Location.X + (this.Width - childForm.Width) / 2,
+                this.Location.Y + (this.Height - childForm.Height) / 2
+            );
 
-            // Đặt vị trí và hiển thị form con
-            childForm.StartPosition = FormStartPosition.Manual; // Sử dụng chế độ định vị thủ công
-            childForm.Location = panelLocation; // Gán tọa độ tuyệt đối của Panel cho form con
+            // Làm mờ form chính
+            this.Opacity = 0.1;
 
-            childForm.ShowDialog(this); // Hiển thị form con dưới dạng modal
+            // Hiển thị form con dưới dạng modal
+            childForm.ShowDialog();
+
+            // Khôi phục độ trong suốt của form chính
+            this.Opacity = 1.0;
 
         }
 
         private void gridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             OpenChildForm(new MedicineDetail());
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new MedicineAdd());
         }
     }
 }
