@@ -1,13 +1,24 @@
-﻿namespace PharmacyManagementSystem.Models
+﻿
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace PharmacyManagementSystem.Models
+
 {
     public class PurchaseDetail
     {
-        public string PurchaseDetailID { get; set; }
-        public string PurchaseID { get; set; }
-        public string MedicineID { get; set; }
-        public int Quantity { get; set; }
-        public decimal Price { get; set; }
+        public Guid PurchaseDetailID { get; set; } // NCHAR(10)
+
+        public Guid PurchaseID { get; set; } // NCHAR(10)
+
+        public Guid ProductID { get; set; } // NCHAR(10)
+
+        public int Quantity { get; set; } // INT
+
+        public decimal Price { get; set; } // DECIMAL(10, 2)
+
         public virtual Purchase Purchase { get; set; }
-        public virtual Medicine Medicine { get; set; }
+
+        public virtual Product Product { get; set; }
     }
+
 }

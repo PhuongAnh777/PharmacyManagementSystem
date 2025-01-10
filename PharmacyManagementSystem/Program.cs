@@ -2,6 +2,9 @@
 using Microsoft.Extensions.DependencyInjection;
 using PharmacyManagementSystem.Models;
 using static Guna.UI2.Native.WinApi;
+using System.IO;
+using PharmacyManagementSystem.Services;
+
 
 namespace PharmacyManagementSystem
 {
@@ -14,33 +17,25 @@ namespace PharmacyManagementSystem
         [STAThread]
         static void Main()
         {
-
-            //ApplicationConfiguration.Initialize();
-            //var builder = new ConfigurationBuilder()
-            //    .SetBasePath(Directory.GetCurrentDirectory())
-            //    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-
-            //IConfiguration configuration = builder.Build();
-
-            //var services = new ServiceCollection();
-
-            //ServiceProvider = services.BuildServiceProvider();
-
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-
-            //// Configure services
-            //var serviceProvider = ServiceConfigurator.ConfigureServices(services, configuration);
-
-            //// Resolve the MainForm with DI
-
-            //var mainForm = serviceProvider.GetRequiredService<CustomerForm>();
-
-
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new MainForm());
+
+            // Load configuration
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+
+            IConfiguration configuration = builder.Build();
+
+            var services = new ServiceCollection();
+
+            // Configure services and get the service provider
+            ServiceProvider = ServiceConfigurator.ConfigureServices(services, configuration);
+
+            // Resolve MainForm through DI
+            var mainForm = ServiceProvider.GetRequiredService<MainForm>();
+
+            // Run application
+            Application.Run(mainForm);
         }
     }
 }

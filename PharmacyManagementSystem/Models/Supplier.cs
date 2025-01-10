@@ -1,12 +1,20 @@
-﻿namespace PharmacyManagementSystem.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PharmacyManagementSystem.Models
 {
     public class Supplier
     {
-        public string SupplierID { get; set; }
-        public string Name { get; set; }
-        public string PhoneNumber { get; set; }
-        public string Email { get; set; }
-        public string Address { get; set; }
-        //public virtual ICollection<Medicine> Medicines { get; set; } = new List<Medicine>();
+        public Guid SupplierID { get; set; } // NCHAR(10)
+
+        public string Name { get; set; } // NVARCHAR(100)
+
+        public string? PhoneNumber { get; set; } // NVARCHAR(15)
+
+        public string? Email { get; set; } // NVARCHAR(100)
+
+        public string? Address { get; set; } // NVARCHAR(MAX)
+
+        public virtual ICollection<Purchase> Purchases { get; set; } = new List<Purchase>();
     }
+
 }

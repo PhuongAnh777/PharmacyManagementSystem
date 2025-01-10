@@ -1,0 +1,37 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace PharmacyManagementSystem.Models
+{
+    public class Product
+    {
+        public Guid ProductID { get; set; } // NCHAR(10)
+
+        public string Name { get; set; } // NVARCHAR(100)
+
+        public string? ActiveIngredient { get; set; } // NVARCHAR(100)
+
+        public string? Dosage { get; set; } // NVARCHAR(50)
+
+        public string? Packaging { get; set; } // NVARCHAR(100)
+
+        public string Unit { get; set; } // NVARCHAR(50)
+
+        public decimal Price { get; set; } // DECIMAL(10, 2)
+
+        public string? Manufacturer { get; set; } // NVARCHAR(100)
+
+        public int StockQuantity { get; set; } // INT
+
+        public DateTime? ExpiryDate { get; set; } // DATE
+
+        public Guid CategoryID { get; set; } // NCHAR(10)
+        public byte[] Image { get; set; }
+
+        public virtual Category Category { get; set; } // Foreign Key
+
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
+        public virtual ICollection<PurchaseDetail> PurchaseDetails { get; set; } = new List<PurchaseDetail>();
+    }
+
+}

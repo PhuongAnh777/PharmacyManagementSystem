@@ -1,19 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="View\Goods\Medicine.cs">
+    <Compile Update="View\Employees\EmployeeEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="View\Goods\MedicineAdd.cs">
+    <Compile Update="View\Goods\CategoryEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="View\Goods\MedicineCategory.cs">
+    <Compile Update="View\Goods\Product.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="View\Goods\MedicineDetail.cs">
+    <Compile Update="View\Goods\ProductAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Goods\CategoryAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Goods\ProductDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Goods\ProductEdit.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Partners\Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Partners\CustomerAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Partners\CustomerDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Partners\CustomerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Partners\Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Partners\SupplierAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Partners\SupplierDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Partners\SupplierEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Sell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Employees\Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Employees\EmployeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Transactions\GoodsReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Transactions\GoodsReceiptDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Transactions\ImportGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Transactions\OrderInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Transactions\OrderInvoiceDetail.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

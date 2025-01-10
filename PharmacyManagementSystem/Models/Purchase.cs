@@ -1,14 +1,25 @@
-﻿namespace PharmacyManagementSystem.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace PharmacyManagementSystem.Models
 {
     public class Purchase
     {
-        public string PurchaseID { get; set; }
-        public string SupplierID { get; set; }
-        public string EmployeeID { get; set; }
-        public DateTime PurchaseDate { get; set; }
-        public decimal TotalAmount { get; set; }
+        public Guid PurchaseID { get; set; } // NCHAR(10)
+
+        public Guid SupplierID { get; set; } // NCHAR(10)
+
+        public Guid EmployeeID { get; set; } // NCHAR(10)
+
+        public DateTime PurchaseDate { get; set; } // DATETIME
+
+        public decimal TotalAmount { get; set; } // DECIMAL(10, 2)
+
         public virtual Supplier Supplier { get; set; }
+
         public virtual Employee Employee { get; set; }
-        //public virtual ICollection<PurchaseDetail> PurchaseDetails { get; set; }
+
+        public virtual ICollection<PurchaseDetail> PurchaseDetails { get; set; } = new List<PurchaseDetail>();
     }
+
 }

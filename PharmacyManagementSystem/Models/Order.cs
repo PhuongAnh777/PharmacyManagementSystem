@@ -1,14 +1,27 @@
-﻿namespace PharmacyManagementSystem.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace PharmacyManagementSystem.Models
 {
     public class Order
     {
-        public string OrderID { get; set; }
-        public string CustomerID { get; set; }
-        public string EmployeeID { get; set; }
-        public DateTime OrderDate { get; set; }
-        public decimal TotalAmount { get; set; }
+        public Guid OrderID { get; set; } // NCHAR(10)
+
+        public Guid CustomerID { get; set; } // NCHAR(10)
+
+        public Guid EmployeeID { get; set; } // NCHAR(10)
+
+        public DateTime OrderDate { get; set; } // DATETIME
+
+        public decimal TotalAmount { get; set; } // DECIMAL(10, 2)
+
+        public string PaymentMethod { get; set; } // ENUM('Cash', 'Bank Transfer')
+
         public virtual Customer Customer { get; set; }
+
         public virtual Employee Employee { get; set; }
-        //public virtual  ICollection<OrderDetail> OrderDetails { get; set; }
+
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
     }
+
 }
