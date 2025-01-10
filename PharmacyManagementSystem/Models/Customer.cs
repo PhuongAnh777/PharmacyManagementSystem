@@ -14,7 +14,9 @@ namespace PharmacyManagementSystem.Models
         public string? Email { get; set; } // NVARCHAR(100)
 
         public string? Address { get; set; } // NVARCHAR(MAX)
-        public byte[] Image { get; set; }
+        public string? Image { get; set; }
+
+        public bool IsDiscontinued { get; set; } // Mặc định chưa ngừng
 
         public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
     }

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PharmacyManagementSystem.Models;
 
@@ -11,9 +12,11 @@ using PharmacyManagementSystem.Models;
 namespace PharmacyManagementSystem.Migrations
 {
     [DbContext(typeof(PharmacyContext))]
-    partial class PharmacyContextModelSnapshot : ModelSnapshot
+    [Migration("20250110131117_EditProduct")]
+    partial class EditProduct
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -96,7 +99,7 @@ namespace PharmacyManagementSystem.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("DateOfBirth")
-                        .HasColumnType("datetime");
+                        .HasColumnType("DATE");
 
                     b.Property<string>("Email")
                         .HasMaxLength(100)
@@ -154,14 +157,11 @@ namespace PharmacyManagementSystem.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWID()");
 
-                    b.Property<Guid?>("CustomerID")
+                    b.Property<Guid>("CustomerID")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("EmployeeID")
+                    b.Property<Guid>("EmployeeID")
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Note")
-                        .HasColumnType("NVARCHAR(MAX)");
 
                     b.Property<DateTime>("OrderDate")
                         .ValueGeneratedOnAdd()
@@ -170,9 +170,7 @@ namespace PharmacyManagementSystem.Migrations
 
                     b.Property<string>("PaymentMethod")
                         .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("nvarchar(max)")
-                        .HasDefaultValue("CASH");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("TotalAmount")
                         .HasColumnType("DECIMAL(10,2)");
@@ -222,7 +220,6 @@ namespace PharmacyManagementSystem.Migrations
                         .HasDefaultValueSql("NEWID()");
 
                     b.Property<string>("ActiveIngredient")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
@@ -253,7 +250,6 @@ namespace PharmacyManagementSystem.Migrations
                         .HasDefaultValue(false);
 
                     b.Property<string>("Manufacturer")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
@@ -270,12 +266,10 @@ namespace PharmacyManagementSystem.Migrations
                         .HasColumnType("decimal(10,2)");
 
                     b.Property<string>("Packaging")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("RegistrationNumber")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
@@ -285,9 +279,6 @@ namespace PharmacyManagementSystem.Migrations
                     b.Property<int>("StockQuantity")
                         .HasColumnType("int");
 
-                    b.Property<Guid?>("SupplierID")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Unit")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
@@ -295,8 +286,6 @@ namespace PharmacyManagementSystem.Migrations
                     b.HasKey("ProductID");
 
                     b.HasIndex("CategoryID");
-
-                    b.HasIndex("SupplierID");
 
                     b.ToTable("Products");
                 });
@@ -481,11 +470,13 @@ namespace PharmacyManagementSystem.Migrations
                     b.HasOne("PharmacyManagementSystem.Models.Customer", "Customer")
                         .WithMany("Orders")
                         .HasForeignKey("CustomerID")
+                        .IsRequired()
                         .HasConstraintName("FK_Orders_Customers");
 
                     b.HasOne("PharmacyManagementSystem.Models.Employee", "Employee")
                         .WithMany("Orders")
                         .HasForeignKey("EmployeeID")
+                        .IsRequired()
                         .HasConstraintName("FK_Orders_Employees");
 
                     b.Navigation("Customer");
@@ -515,20 +506,12 @@ namespace PharmacyManagementSystem.Migrations
             modelBuilder.Entity("PharmacyManagementSystem.Models.Product", b =>
                 {
                     b.HasOne("PharmacyManagementSystem.Models.Category", "Category")
-                        .WithMany("Products")
+                        .WithMany("Medicines")
                         .HasForeignKey("CategoryID")
                         .IsRequired()
-                        .HasConstraintName("FK_Product_Category");
-
-                    b.HasOne("PharmacyManagementSystem.Models.Supplier", "Supplier")
-                        .WithMany("Products")
-                        .HasForeignKey("SupplierID")
-                        .OnDelete(DeleteBehavior.SetNull)
-                        .HasConstraintName("FK_Products_Suppliers");
+                        .HasConstraintName("FK_Medicines_MedicineCategories");
 
                     b.Navigation("Category");
-
-                    b.Navigation("Supplier");
                 });
 
             modelBuilder.Entity("PharmacyManagementSystem.Models.Purchase", b =>
@@ -571,7 +554,7 @@ namespace PharmacyManagementSystem.Migrations
 
             modelBuilder.Entity("PharmacyManagementSystem.Models.Category", b =>
                 {
-                    b.Navigation("Products");
+                    b.Navigation("Medicines");
                 });
 
             modelBuilder.Entity("PharmacyManagementSystem.Models.Customer", b =>
@@ -612,8 +595,6 @@ namespace PharmacyManagementSystem.Migrations
 
             modelBuilder.Entity("PharmacyManagementSystem.Models.Supplier", b =>
                 {
-                    b.Navigation("Products");
-
                     b.Navigation("Purchases");
                 });
 

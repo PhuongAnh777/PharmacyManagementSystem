@@ -28,12 +28,391 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "OrderInvoiceDetail";
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            pnFooter = new Panel();
+            lblSub = new Label();
+            lblPage = new Label();
+            btnSau = new Guna.UI2.WinForms.Guna2Button();
+            btnTruoc = new Guna.UI2.WinForms.Guna2Button();
+            gridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            pnHeader = new Panel();
+            lblHeader = new Label();
+            lblHoaDon = new Label();
+            ProductID = new DataGridViewTextBoxColumn();
+            ProductName = new DataGridViewTextBoxColumn();
+            Quantity = new DataGridViewTextBoxColumn();
+            SellingPrice = new DataGridViewTextBoxColumn();
+            Amount = new DataGridViewTextBoxColumn();
+            pnInfor = new Panel();
+            lblThoiGian = new Label();
+            lblKhachHang = new Label();
+            lblNguoiBan = new Label();
+            lblThoiGianV = new Label();
+            lblKhachHangV = new Label();
+            lblNguoiBanV = new Label();
+            lblTongTien = new Label();
+            lblTongTienV = new Label();
+            pnFooter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gridView).BeginInit();
+            pnHeader.SuspendLayout();
+            pnInfor.SuspendLayout();
+            SuspendLayout();
+            // 
+            // pnFooter
+            // 
+            pnFooter.Controls.Add(lblSub);
+            pnFooter.Controls.Add(lblPage);
+            pnFooter.Controls.Add(btnSau);
+            pnFooter.Controls.Add(btnTruoc);
+            pnFooter.Location = new Point(12, 623);
+            pnFooter.Name = "pnFooter";
+            pnFooter.Size = new Size(1338, 50);
+            pnFooter.TabIndex = 13;
+            // 
+            // lblSub
+            // 
+            lblSub.AutoSize = true;
+            lblSub.Location = new Point(382, 12);
+            lblSub.Name = "lblSub";
+            lblSub.Size = new Size(312, 22);
+            lblSub.TabIndex = 3;
+            lblSub.Text = "Hiển thị 11 - 20 / Tổng số 32 hàng hóa";
+            // 
+            // lblPage
+            // 
+            lblPage.AutoSize = true;
+            lblPage.ForeColor = Color.RoyalBlue;
+            lblPage.Location = new Point(185, 12);
+            lblPage.Name = "lblPage";
+            lblPage.Size = new Size(60, 22);
+            lblPage.TabIndex = 2;
+            lblPage.Text = "label1";
+            // 
+            // btnSau
+            // 
+            btnSau.BackColor = SystemColors.Control;
+            btnSau.BorderColor = Color.RoyalBlue;
+            btnSau.BorderRadius = 20;
+            btnSau.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnSau.BorderThickness = 1;
+            btnSau.CustomizableEdges = customizableEdges1;
+            btnSau.DisabledState.BorderColor = Color.DarkGray;
+            btnSau.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSau.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSau.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSau.FillColor = Color.White;
+            btnSau.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSau.ForeColor = Color.RoyalBlue;
+            btnSau.Location = new Point(295, 3);
+            btnSau.Name = "btnSau";
+            btnSau.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnSau.Size = new Size(81, 44);
+            btnSau.TabIndex = 1;
+            btnSau.Text = "Sau";
+            // 
+            // btnTruoc
+            // 
+            btnTruoc.BackColor = SystemColors.Control;
+            btnTruoc.BorderColor = Color.RoyalBlue;
+            btnTruoc.BorderRadius = 20;
+            btnTruoc.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnTruoc.BorderThickness = 1;
+            btnTruoc.CustomizableEdges = customizableEdges3;
+            btnTruoc.DisabledState.BorderColor = Color.DarkGray;
+            btnTruoc.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnTruoc.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnTruoc.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnTruoc.FillColor = Color.White;
+            btnTruoc.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnTruoc.ForeColor = Color.RoyalBlue;
+            btnTruoc.Location = new Point(61, 3);
+            btnTruoc.Name = "btnTruoc";
+            btnTruoc.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnTruoc.Size = new Size(81, 44);
+            btnTruoc.TabIndex = 0;
+            btnTruoc.Text = "Trước";
+            // 
+            // gridView
+            // 
+            gridView.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = Color.White;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            gridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            gridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            gridView.ColumnHeadersHeight = 24;
+            gridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            gridView.Columns.AddRange(new DataGridViewColumn[] { ProductID, ProductName, Quantity, SellingPrice, Amount });
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            gridView.DefaultCellStyle = dataGridViewCellStyle3;
+            gridView.GridColor = Color.FromArgb(231, 229, 255);
+            gridView.Location = new Point(12, 181);
+            gridView.Name = "gridView";
+            gridView.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.White;
+            dataGridViewCellStyle4.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            gridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            gridView.RowHeadersVisible = false;
+            gridView.RowHeadersWidth = 51;
+            gridView.Size = new Size(1338, 436);
+            gridView.TabIndex = 12;
+            gridView.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            gridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            gridView.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            gridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            gridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            gridView.ThemeStyle.BackColor = Color.White;
+            gridView.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            gridView.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            gridView.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            gridView.ThemeStyle.HeaderStyle.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            gridView.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            gridView.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            gridView.ThemeStyle.HeaderStyle.Height = 24;
+            gridView.ThemeStyle.ReadOnly = false;
+            gridView.ThemeStyle.RowsStyle.BackColor = Color.White;
+            gridView.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            gridView.ThemeStyle.RowsStyle.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            gridView.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
+            gridView.ThemeStyle.RowsStyle.Height = 29;
+            gridView.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            gridView.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            // 
+            // pnHeader
+            // 
+            pnHeader.Controls.Add(lblHoaDon);
+            pnHeader.Controls.Add(lblHeader);
+            pnHeader.Location = new Point(13, 5);
+            pnHeader.Name = "pnHeader";
+            pnHeader.Size = new Size(1337, 50);
+            pnHeader.TabIndex = 11;
+            // 
+            // lblHeader
+            // 
+            lblHeader.AutoSize = true;
+            lblHeader.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblHeader.Location = new Point(4, 8);
+            lblHeader.Name = "lblHeader";
+            lblHeader.Size = new Size(218, 32);
+            lblHeader.TabIndex = 0;
+            lblHeader.Text = "Chi tiết hóa đơn:";
+            // 
+            // lblHoaDon
+            // 
+            lblHoaDon.AutoSize = true;
+            lblHoaDon.Location = new Point(240, 16);
+            lblHoaDon.Name = "lblHoaDon";
+            lblHoaDon.Size = new Size(60, 22);
+            lblHoaDon.TabIndex = 1;
+            lblHoaDon.Text = "label1";
+            // 
+            // ProductID
+            // 
+            ProductID.DataPropertyName = "ProductID";
+            ProductID.HeaderText = "Mã hàng";
+            ProductID.MinimumWidth = 6;
+            ProductID.Name = "ProductID";
+            ProductID.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // ProductName
+            // 
+            ProductName.DataPropertyName = "ProductName";
+            ProductName.HeaderText = "Tên hàng";
+            ProductName.MinimumWidth = 6;
+            ProductName.Name = "ProductName";
+            ProductName.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // Quantity
+            // 
+            Quantity.DataPropertyName = "Quantity";
+            Quantity.HeaderText = "Số lượng";
+            Quantity.MinimumWidth = 6;
+            Quantity.Name = "Quantity";
+            Quantity.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // SellingPrice
+            // 
+            SellingPrice.DataPropertyName = "SellingPrice";
+            SellingPrice.HeaderText = "Giá bán";
+            SellingPrice.MinimumWidth = 6;
+            SellingPrice.Name = "SellingPrice";
+            SellingPrice.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // Amount
+            // 
+            Amount.DataPropertyName = "Amount";
+            Amount.HeaderText = "Thành tiền";
+            Amount.MinimumWidth = 6;
+            Amount.Name = "Amount";
+            Amount.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // pnInfor
+            // 
+            pnInfor.Controls.Add(lblTongTienV);
+            pnInfor.Controls.Add(lblTongTien);
+            pnInfor.Controls.Add(lblNguoiBanV);
+            pnInfor.Controls.Add(lblKhachHangV);
+            pnInfor.Controls.Add(lblThoiGianV);
+            pnInfor.Controls.Add(lblNguoiBan);
+            pnInfor.Controls.Add(lblKhachHang);
+            pnInfor.Controls.Add(lblThoiGian);
+            pnInfor.Location = new Point(13, 62);
+            pnInfor.Name = "pnInfor";
+            pnInfor.Size = new Size(1337, 113);
+            pnInfor.TabIndex = 14;
+            // 
+            // lblThoiGian
+            // 
+            lblThoiGian.AutoSize = true;
+            lblThoiGian.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblThoiGian.Location = new Point(15, 18);
+            lblThoiGian.Name = "lblThoiGian";
+            lblThoiGian.Size = new Size(106, 25);
+            lblThoiGian.TabIndex = 0;
+            lblThoiGian.Text = "Thời gian";
+            // 
+            // lblKhachHang
+            // 
+            lblKhachHang.AutoSize = true;
+            lblKhachHang.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblKhachHang.Location = new Point(431, 18);
+            lblKhachHang.Name = "lblKhachHang";
+            lblKhachHang.Size = new Size(135, 25);
+            lblKhachHang.TabIndex = 1;
+            lblKhachHang.Text = "Khách hàng";
+            // 
+            // lblNguoiBan
+            // 
+            lblNguoiBan.AutoSize = true;
+            lblNguoiBan.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNguoiBan.Location = new Point(15, 78);
+            lblNguoiBan.Name = "lblNguoiBan";
+            lblNguoiBan.Size = new Size(117, 25);
+            lblNguoiBan.TabIndex = 2;
+            lblNguoiBan.Text = "Người bán";
+            // 
+            // lblThoiGianV
+            // 
+            lblThoiGianV.AutoSize = true;
+            lblThoiGianV.Location = new Point(162, 18);
+            lblThoiGianV.Name = "lblThoiGianV";
+            lblThoiGianV.Size = new Size(60, 22);
+            lblThoiGianV.TabIndex = 3;
+            lblThoiGianV.Text = "label1";
+            // 
+            // lblKhachHangV
+            // 
+            lblKhachHangV.AutoSize = true;
+            lblKhachHangV.Location = new Point(591, 18);
+            lblKhachHangV.Name = "lblKhachHangV";
+            lblKhachHangV.Size = new Size(60, 22);
+            lblKhachHangV.TabIndex = 4;
+            lblKhachHangV.Text = "label1";
+            // 
+            // lblNguoiBanV
+            // 
+            lblNguoiBanV.AutoSize = true;
+            lblNguoiBanV.Location = new Point(162, 81);
+            lblNguoiBanV.Name = "lblNguoiBanV";
+            lblNguoiBanV.Size = new Size(60, 22);
+            lblNguoiBanV.TabIndex = 5;
+            lblNguoiBanV.Text = "label1";
+            // 
+            // lblTongTien
+            // 
+            lblTongTien.AutoSize = true;
+            lblTongTien.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTongTien.Location = new Point(431, 78);
+            lblTongTien.Name = "lblTongTien";
+            lblTongTien.Size = new Size(107, 25);
+            lblTongTien.TabIndex = 6;
+            lblTongTien.Text = "Tổng tiền";
+            // 
+            // lblTongTienV
+            // 
+            lblTongTienV.AutoSize = true;
+            lblTongTienV.Location = new Point(591, 78);
+            lblTongTienV.Name = "lblTongTienV";
+            lblTongTienV.Size = new Size(60, 22);
+            lblTongTienV.TabIndex = 7;
+            lblTongTienV.Text = "label1";
+            // 
+            // OrderInvoiceDetail
+            // 
+            AutoScaleDimensions = new SizeF(11F, 22F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(1362, 678);
+            Controls.Add(pnInfor);
+            Controls.Add(pnFooter);
+            Controls.Add(gridView);
+            Controls.Add(pnHeader);
+            Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "OrderInvoiceDetail";
+            Text = "OrderInvoiceDetail";
+            pnFooter.ResumeLayout(false);
+            pnFooter.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)gridView).EndInit();
+            pnHeader.ResumeLayout(false);
+            pnHeader.PerformLayout();
+            pnInfor.ResumeLayout(false);
+            pnInfor.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel pnFooter;
+        private Label lblSub;
+        private Label lblPage;
+        private Guna.UI2.WinForms.Guna2Button btnSau;
+        private Guna.UI2.WinForms.Guna2Button btnTruoc;
+        private Guna.UI2.WinForms.Guna2DataGridView gridView;
+        private Panel pnHeader;
+        private Label lblHeader;
+        private DataGridViewTextBoxColumn ProductID;
+        private DataGridViewTextBoxColumn ProductName;
+        private DataGridViewTextBoxColumn Quantity;
+        private DataGridViewTextBoxColumn SellingPrice;
+        private DataGridViewTextBoxColumn Amount;
+        private Label lblHoaDon;
+        private Panel pnInfor;
+        private Label lblThoiGian;
+        private Label lblTongTien;
+        private Label lblNguoiBanV;
+        private Label lblKhachHangV;
+        private Label lblThoiGianV;
+        private Label lblNguoiBan;
+        private Label lblKhachHang;
+        private Label lblTongTienV;
     }
 }

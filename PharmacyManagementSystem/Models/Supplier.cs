@@ -13,8 +13,10 @@ namespace PharmacyManagementSystem.Models
         public string? Email { get; set; } // NVARCHAR(100)
 
         public string? Address { get; set; } // NVARCHAR(MAX)
+        public bool IsDiscontinued { get; set; } // Mặc định chưa ngừng
 
         public virtual ICollection<Purchase> Purchases { get; set; } = new List<Purchase>();
+        public virtual ICollection<Product> Products { get; set; } = new List<Product>();
     }
 
 }

@@ -12,7 +12,7 @@ namespace PharmacyManagementSystem.Models
         public Guid? ParentCategoryID { get; set; }
         public Category ParentCategory { get; set; }
 
-        public virtual ICollection<Product> Medicines { get; set; } = new List<Product>();
+        public virtual ICollection<Product> Products { get; set; } = new List<Product>();
     }
 
 }

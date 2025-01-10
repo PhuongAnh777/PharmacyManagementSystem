@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -44,7 +45,10 @@
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             pnLeft = new Panel();
             pnTonKho = new Panel();
             rtbnDungBan = new Guna.UI2.WinForms.Guna2RadioButton();
@@ -55,6 +59,9 @@
             lblTonKho = new Label();
             pnNhomHang = new Panel();
             listViewCategory = new ListView();
+            CategoryName = new ColumnHeader();
+            Pen = new ColumnHeader();
+            imageList = new ImageList(components);
             tbxSearchCategory = new Guna.UI2.WinForms.Guna2TextBox();
             pnNhomHangHeader = new Panel();
             btnAddCategory = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -66,11 +73,18 @@
             tbxSearch = new Guna.UI2.WinForms.Guna2TextBox();
             lblHeader = new Label();
             gridView = new Guna.UI2.WinForms.Guna2DataGridView();
-            MaThuoc = new DataGridViewTextBoxColumn();
-            TenThuoc = new DataGridViewTextBoxColumn();
-            imageList = new ImageList(components);
-            CategoryName = new ColumnHeader();
-            Pen = new ColumnHeader();
+            pnFooter = new Panel();
+            lblSub = new Label();
+            lblPage = new Label();
+            btnSau = new Guna.UI2.WinForms.Guna2Button();
+            btnTruoc = new Guna.UI2.WinForms.Guna2Button();
+            ProductID = new DataGridViewTextBoxColumn();
+            Image = new DataGridViewImageColumn();
+            ProductName = new DataGridViewTextBoxColumn();
+            Category = new DataGridViewTextBoxColumn();
+            SellingPrice = new DataGridViewTextBoxColumn();
+            OriginalPrice = new DataGridViewTextBoxColumn();
+            Quantity = new DataGridViewTextBoxColumn();
             pnLeft.SuspendLayout();
             pnTonKho.SuspendLayout();
             pnTonKhoHeader.SuspendLayout();
@@ -78,6 +92,7 @@
             pnNhomHangHeader.SuspendLayout();
             pnHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gridView).BeginInit();
+            pnFooter.SuspendLayout();
             SuspendLayout();
             // 
             // pnLeft
@@ -219,6 +234,23 @@
             listViewCategory.SmallImageList = imageList;
             listViewCategory.TabIndex = 2;
             listViewCategory.UseCompatibleStateImageBehavior = false;
+            // 
+            // CategoryName
+            // 
+            CategoryName.Text = "";
+            CategoryName.Width = 200;
+            // 
+            // Pen
+            // 
+            Pen.Text = "";
+            Pen.Width = 30;
+            // 
+            // imageList
+            // 
+            imageList.ColorDepth = ColorDepth.Depth32Bit;
+            imageList.ImageStream = (ImageListStreamer)resources.GetObject("imageList.ImageStream");
+            imageList.TransparentColor = Color.Transparent;
+            imageList.Images.SetKeyName(0, "pen.jpg");
             // 
             // tbxSearchCategory
             // 
@@ -394,7 +426,7 @@
             gridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             gridView.ColumnHeadersHeight = 24;
             gridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            gridView.Columns.AddRange(new DataGridViewColumn[] { MaThuoc, TenThuoc });
+            gridView.Columns.AddRange(new DataGridViewColumn[] { ProductID, Image, ProductName, Category, SellingPrice, OriginalPrice, Quantity });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -417,7 +449,7 @@
             gridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             gridView.RowHeadersVisible = false;
             gridView.RowHeadersWidth = 51;
-            gridView.Size = new Size(1016, 606);
+            gridView.Size = new Size(1016, 565);
             gridView.TabIndex = 2;
             gridView.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             gridView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -442,48 +474,148 @@
             gridView.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             gridView.CellContentClick += gridView_CellContentClick;
             // 
-            // MaThuoc
+            // pnFooter
             // 
-            MaThuoc.HeaderText = "Mã thuốc";
-            MaThuoc.MinimumWidth = 6;
-            MaThuoc.Name = "MaThuoc";
+            pnFooter.Controls.Add(lblSub);
+            pnFooter.Controls.Add(lblPage);
+            pnFooter.Controls.Add(btnSau);
+            pnFooter.Controls.Add(btnTruoc);
+            pnFooter.Location = new Point(334, 628);
+            pnFooter.Name = "pnFooter";
+            pnFooter.Size = new Size(1016, 50);
+            pnFooter.TabIndex = 8;
             // 
-            // TenThuoc
+            // lblSub
             // 
-            TenThuoc.HeaderText = "Tên thuốc";
-            TenThuoc.MinimumWidth = 6;
-            TenThuoc.Name = "TenThuoc";
+            lblSub.AutoSize = true;
+            lblSub.Location = new Point(382, 12);
+            lblSub.Name = "lblSub";
+            lblSub.Size = new Size(312, 22);
+            lblSub.TabIndex = 3;
+            lblSub.Text = "Hiển thị 11 - 20 / Tổng số 32 hàng hóa";
             // 
-            // imageList
+            // lblPage
             // 
-            imageList.ColorDepth = ColorDepth.Depth32Bit;
-            imageList.ImageStream = (ImageListStreamer)resources.GetObject("imageList.ImageStream");
-            imageList.TransparentColor = Color.Transparent;
-            imageList.Images.SetKeyName(0, "pen.jpg");
+            lblPage.AutoSize = true;
+            lblPage.ForeColor = Color.RoyalBlue;
+            lblPage.Location = new Point(185, 12);
+            lblPage.Name = "lblPage";
+            lblPage.Size = new Size(60, 22);
+            lblPage.TabIndex = 2;
+            lblPage.Text = "label1";
             // 
-            // CategoryName
+            // btnSau
             // 
-            CategoryName.Text = "";
-            CategoryName.Width = 200;
+            btnSau.BackColor = SystemColors.Control;
+            btnSau.BorderColor = Color.RoyalBlue;
+            btnSau.BorderRadius = 20;
+            btnSau.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnSau.BorderThickness = 1;
+            btnSau.CustomizableEdges = customizableEdges12;
+            btnSau.DisabledState.BorderColor = Color.DarkGray;
+            btnSau.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSau.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSau.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSau.FillColor = Color.White;
+            btnSau.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSau.ForeColor = Color.RoyalBlue;
+            btnSau.Location = new Point(295, 3);
+            btnSau.Name = "btnSau";
+            btnSau.ShadowDecoration.CustomizableEdges = customizableEdges13;
+            btnSau.Size = new Size(81, 44);
+            btnSau.TabIndex = 1;
+            btnSau.Text = "Sau";
             // 
-            // Pen
+            // btnTruoc
             // 
-            Pen.Text = "";
-            Pen.Width = 30;
+            btnTruoc.BackColor = SystemColors.Control;
+            btnTruoc.BorderColor = Color.RoyalBlue;
+            btnTruoc.BorderRadius = 20;
+            btnTruoc.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnTruoc.BorderThickness = 1;
+            btnTruoc.CustomizableEdges = customizableEdges14;
+            btnTruoc.DisabledState.BorderColor = Color.DarkGray;
+            btnTruoc.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnTruoc.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnTruoc.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnTruoc.FillColor = Color.White;
+            btnTruoc.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnTruoc.ForeColor = Color.RoyalBlue;
+            btnTruoc.Location = new Point(61, 3);
+            btnTruoc.Name = "btnTruoc";
+            btnTruoc.ShadowDecoration.CustomizableEdges = customizableEdges15;
+            btnTruoc.Size = new Size(81, 44);
+            btnTruoc.TabIndex = 0;
+            btnTruoc.Text = "Trước";
             // 
-            // Medicine
+            // ProductID
+            // 
+            ProductID.DataPropertyName = "ProductID";
+            ProductID.HeaderText = "Mã hàng";
+            ProductID.MinimumWidth = 6;
+            ProductID.Name = "ProductID";
+            ProductID.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // Image
+            // 
+            Image.HeaderText = "Ảnh";
+            Image.MinimumWidth = 6;
+            Image.Name = "Image";
+            // 
+            // ProductName
+            // 
+            ProductName.DataPropertyName = "ProductName";
+            ProductName.HeaderText = "Tên hàng";
+            ProductName.MinimumWidth = 6;
+            ProductName.Name = "ProductName";
+            ProductName.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // Category
+            // 
+            Category.DataPropertyName = "Category";
+            Category.HeaderText = "Nhóm hàng";
+            Category.MinimumWidth = 6;
+            Category.Name = "Category";
+            Category.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // SellingPrice
+            // 
+            SellingPrice.DataPropertyName = "SellingPrice";
+            SellingPrice.HeaderText = "Giá bán";
+            SellingPrice.MinimumWidth = 6;
+            SellingPrice.Name = "SellingPrice";
+            SellingPrice.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // OriginalPrice
+            // 
+            OriginalPrice.DataPropertyName = "OriginalPrice";
+            OriginalPrice.HeaderText = "Giá vốn";
+            OriginalPrice.MinimumWidth = 6;
+            OriginalPrice.Name = "OriginalPrice";
+            OriginalPrice.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // Quantity
+            // 
+            Quantity.DataPropertyName = "Quantity";
+            Quantity.HeaderText = "Tồn kho";
+            Quantity.MinimumWidth = 6;
+            Quantity.Name = "Quantity";
+            Quantity.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // Product
             // 
             AutoScaleDimensions = new SizeF(11F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(1362, 678);
+            Controls.Add(pnFooter);
             Controls.Add(gridView);
             Controls.Add(pnHeader);
             Controls.Add(pnLeft);
             Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
-            Name = "Medicine";
+            Name = "Product";
             Text = "Medicine";
             pnLeft.ResumeLayout(false);
             pnTonKho.ResumeLayout(false);
@@ -496,6 +628,8 @@
             pnHeader.ResumeLayout(false);
             pnHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)gridView).EndInit();
+            pnFooter.ResumeLayout(false);
+            pnFooter.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -521,11 +655,21 @@
         private Guna.UI2.WinForms.Guna2Button btnXuatFile;
         private Guna.UI2.WinForms.Guna2Button btnImport;
         private Guna.UI2.WinForms.Guna2DataGridView gridView;
-        private DataGridViewTextBoxColumn MaThuoc;
-        private DataGridViewTextBoxColumn TenThuoc;
         private ListView listViewCategory;
         private ColumnHeader CategoryName;
         private ImageList imageList;
         private ColumnHeader Pen;
+        private Panel pnFooter;
+        private Label lblSub;
+        private Label lblPage;
+        private Guna.UI2.WinForms.Guna2Button btnSau;
+        private Guna.UI2.WinForms.Guna2Button btnTruoc;
+        private DataGridViewTextBoxColumn ProductID;
+        private DataGridViewImageColumn Image;
+        private DataGridViewTextBoxColumn ProductName;
+        private DataGridViewTextBoxColumn Category;
+        private DataGridViewTextBoxColumn SellingPrice;
+        private DataGridViewTextBoxColumn OriginalPrice;
+        private DataGridViewTextBoxColumn Quantity;
     }
 }

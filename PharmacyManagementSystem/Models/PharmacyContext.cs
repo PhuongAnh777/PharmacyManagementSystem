@@ -54,7 +54,8 @@ namespace PharmacyManagementSystem.Models
                 entity.Property(e => e.PhoneNumber).HasMaxLength(15);
                 entity.Property(e => e.Email).HasMaxLength(100);
                 entity.Property(e => e.Address).HasColumnType("NVARCHAR(MAX)");
-                entity.Property(e => e.Image).HasColumnType("VARBINARY(MAX)"); // Lưu ảnh dạng nhị phân
+                entity.Property(e => e.Image).HasMaxLength(100);
+                entity.Property(p => p.IsDiscontinued).IsRequired().HasDefaultValue(false); 
             });
 
             modelBuilder.Entity<Category>(entity =>
@@ -81,20 +82,36 @@ namespace PharmacyManagementSystem.Models
                 entity.Property(ua => ua.ProductID).HasDefaultValueSql("NEWID()");
                 entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
                 entity.Property(e => e.ActiveIngredient).IsRequired().HasMaxLength(100);
-                entity.Property(e => e.Dosage).IsRequired().HasMaxLength(50);
-                entity.Property(e => e.Packaging).HasMaxLength(100);
+                entity.Property(e => e.Dosage).HasMaxLength(50);
+                entity.Property(e => e.Packaging).IsRequired().HasMaxLength(100);
                 entity.Property(e => e.Unit).HasMaxLength(50);
-                entity.Property(e => e.Price).HasColumnType("DECIMAL(10,2)").IsRequired();
-                entity.Property(e => e.Manufacturer).HasMaxLength(100);
+                entity.Property(e => e.Manufacturer).IsRequired().HasMaxLength(100);
                 entity.Property(e => e.StockQuantity).IsRequired();
                 entity.Property(e => e.ExpiryDate).HasColumnType("DATE").IsRequired();
-                entity.Property(e => e.Image).HasColumnType("VARBINARY(MAX)"); // Lưu ảnh dạng nhị phân
+                entity.Property(e => e.Image).HasMaxLength(100);
+                entity.Property(p => p.IsDiscontinued).IsRequired().HasDefaultValue(false);
 
+                entity.Property(m => m.MedicineID).IsRequired(false).HasMaxLength(50);
+
+                entity.Property(m => m.RegistrationNumber).HasMaxLength(100).IsRequired();
+                entity.Property(m => m.CountryOfOrigin).HasMaxLength(100).IsRequired(false); 
+                entity.Property(m => m.OriginalPrice).IsRequired().HasColumnType("decimal(10,2)");
+                entity.Property(m => m.SellingPrice).IsRequired(false).HasColumnType("decimal(10,2)");
+                entity.Property(m => m.Description).IsRequired(false).HasColumnType("nvarchar(max)");
+                entity.Property(p => p.SupplierID).IsRequired(false);
+
+                entity.HasOne(d => d.Supplier)
+                    .WithMany(p => p.Products)
+                    .HasForeignKey(d => d.SupplierID)
+                    .OnDelete(DeleteBehavior.SetNull)
+                    .HasConstraintName("FK_Products_Suppliers");
+                //entity.Property(p => p.CategoryID).IsRequired();
                 entity.HasOne(d => d.Category)
-                    .WithMany(p => p.Medicines)
+                    .WithMany(p => p.Products)
                     .HasForeignKey(d => d.CategoryID)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Medicines_MedicineCategories");
+                    .HasConstraintName("FK_Product_Category");
+                
             });
 
             modelBuilder.Entity<Employee>(entity =>
@@ -103,11 +120,11 @@ namespace PharmacyManagementSystem.Models
                 entity.Property(ua => ua.EmployeeID).HasDefaultValueSql("NEWID()");
                 entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
                 entity.Property(e => e.Gender).IsRequired();
-                entity.Property(e => e.Position).HasMaxLength(50);
                 entity.Property(e => e.PhoneNumber).HasMaxLength(15);
                 entity.Property(e => e.Email).HasMaxLength(100);
-                entity.Property(e => e.Image).HasColumnType("VARBINARY(MAX)"); // Lưu ảnh dạng nhị phân
-
+                entity.Property(e => e.Image).HasMaxLength(100);
+                entity.Property(p => p.IsDiscontinued).IsRequired().HasDefaultValue(false);
+                entity.Property(e => e.DateOfBirth).HasColumnType("datetime");
                 // Relationship with UserAccount (assuming UserAccount entity has been defined)
                 entity.HasOne(e => e.UserAccount)
                     .WithOne(ua => ua.Employee)  // One-to-one relationship
@@ -155,8 +172,8 @@ namespace PharmacyManagementSystem.Models
                 entity.Property(ua => ua.OrderID).HasDefaultValueSql("NEWID()");
                 entity.Property(e => e.OrderDate).HasDefaultValueSql("(getdate())").HasColumnType("datetime");
                 entity.Property(e => e.TotalAmount).HasColumnType("DECIMAL(10,2)").IsRequired();
-                entity.Property(e => e.PaymentMethod).IsRequired();
-
+                entity.Property(e => e.PaymentMethod).IsRequired().HasDefaultValue("CASH");
+                entity.Property(e => e.Note).HasColumnType("NVARCHAR(MAX)");
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.CustomerID)
@@ -193,11 +210,12 @@ namespace PharmacyManagementSystem.Models
             modelBuilder.Entity<Supplier>(entity =>
             {
                 entity.HasKey(e => e.SupplierID);
-                entity.Property(ua => ua.SupplierID).HasDefaultValueSql("NEWID()");
+                entity.Property(e => e.SupplierID).HasDefaultValueSql("NEWID()");
                 entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
                 entity.Property(e => e.PhoneNumber).HasMaxLength(15);
                 entity.Property(e => e.Email).HasMaxLength(100);
                 entity.Property(e => e.Address).HasColumnType("NVARCHAR(MAX)");
+                entity.Property(p => p.IsDiscontinued).IsRequired().HasDefaultValue(false);
             });
 
             modelBuilder.Entity<Purchase>(entity =>

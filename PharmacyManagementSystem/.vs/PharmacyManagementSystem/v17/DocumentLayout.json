@@ -3,43 +3,91 @@
   "WorkspaceRootPath": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Migrations\\20250110084016_InitialImage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250110084016_InitialImage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Migrations\\20250110192643_Suppliers2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250110192643_Suppliers2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\pharmacycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\pharmacycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\employees\\employeeedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\employees\\employeeedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\partners\\customerdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\partners\\customerdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\partners\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\partners\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\goods\\productadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\goods\\productadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\sell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\sell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\view\\transactions\\importgoods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\transactions\\importgoods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\transactions\\goodsreceiptdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\transactions\\goodsreceiptdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\transactions\\orderinvoicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\transactions\\orderinvoicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\view\\transactions\\goodsreceipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\transactions\\goodsreceipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\partners\\supplieredit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\partners\\supplieredit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\partners\\supplierdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\view\\partners\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\partners\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\transactions\\orderinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\transactions\\orderinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\view\\goods\\productdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\goods\\productdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\view\\employees\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\employees\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\view\\partners\\supplierdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\partners\\supplierdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -47,92 +95,60 @@
       "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\partners\\supplieradd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\partners\\customeredit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\partners\\customeredit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\view\\partners\\customerdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\partners\\customerdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\partners\\customeradd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\partners\\customeradd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\transactions\\orderinvoicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\transactions\\orderinvoicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\transactions\\goodsreceiptdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\transactions\\goodsreceiptdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\transactions\\goodsreceipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\transactions\\goodsreceipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\transactions\\importgoods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\transactions\\importgoods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\view\\employees\\employeeadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\employees\\employeeadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\goods\\productadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\goods\\productadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\goods\\categoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\goods\\categoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\view\\partners\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\partners\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\goods\\productdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\goods\\productdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\view\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\goods\\categoryedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\goods\\categoryedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\goods\\productedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\view\\goods\\productedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\goods\\productedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\goods\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\view\\goods\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\goods\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\view\\employees\\employeeedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\employees\\employeeedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\goods\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\goods\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\goods\\productadd.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\goods\\productadd.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\purchasedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\purchasedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\employeerole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\employeerole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\view\\goods\\categoryedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:view\\goods\\categoryedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|solutionrelative:models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{010E52A7-EAAF-4380-9D26-1C0857AE95F6}|PharmacyManagementSystem.csproj|c:\\users\\vivobook\\ta\u0300i li\u00EA\u0323u\\pharmacy_system\\pharmacymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -151,14 +167,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250110084016_InitialImage.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Migrations\\20250110084016_InitialImage.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250110084016_InitialImage.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Migrations\\20250110084016_InitialImage.cs",
-              "RelativeToolTip": "Migrations\\20250110084016_InitialImage.cs",
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Employee.cs",
+              "RelativeToolTip": "Models\\Employee.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T08:37:36.858Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250110192643_Suppliers2.cs",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Migrations\\20250110192643_Suppliers2.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250110192643_Suppliers2.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Migrations\\20250110192643_Suppliers2.cs",
+              "RelativeToolTip": "Migrations\\20250110192643_Suppliers2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T19:26:43.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "Models\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "Models\\OrderDetail.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:40:16.327Z",
+              "WhenOpened": "2025-01-10T16:44:58.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Sell.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Sell.cs",
+              "RelativeDocumentMoniker": "View\\Sell.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Sell.cs [Design]",
+              "RelativeToolTip": "View\\Sell.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T15:28:31.902Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBEAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T05:22:55.964Z",
               "EditorCaption": ""
             },
             {
@@ -169,185 +237,66 @@
               "RelativeDocumentMoniker": "Models\\Product.cs",
               "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Product.cs",
               "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA3wBwAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAA4wCUAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:37:43.636Z",
+              "WhenOpened": "2025-01-10T12:36:03.331Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "Models\\Employee.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Employee.cs",
-              "RelativeToolTip": "Models\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:37:36.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CustomerDetail.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\CustomerDetail.cs",
-              "RelativeDocumentMoniker": "View\\Partners\\CustomerDetail.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\CustomerDetail.cs [Design]",
-              "RelativeToolTip": "View\\Partners\\CustomerDetail.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:34:23.26Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SupplierEdit.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\SupplierEdit.cs",
-              "RelativeDocumentMoniker": "View\\Partners\\SupplierEdit.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\SupplierEdit.cs [Design]",
-              "RelativeToolTip": "View\\Partners\\SupplierEdit.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:33:28.111Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SupplierDetail.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\SupplierDetail.cs",
-              "RelativeDocumentMoniker": "View\\Partners\\SupplierDetail.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\SupplierDetail.cs [Design]",
-              "RelativeToolTip": "View\\Partners\\SupplierDetail.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:33:17.235Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EmployeeEdit.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Employees\\EmployeeEdit.cs",
-              "RelativeDocumentMoniker": "View\\Employees\\EmployeeEdit.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Employees\\EmployeeEdit.cs [Design]",
-              "RelativeToolTip": "View\\Employees\\EmployeeEdit.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:32:09.655Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "PharmacyContext.cs",
               "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\PharmacyContext.cs",
               "RelativeDocumentMoniker": "Models\\PharmacyContext.cs",
               "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\PharmacyContext.cs",
               "RelativeToolTip": "Models\\PharmacyContext.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAADwvzoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAuwGQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:29:38.867Z",
+              "WhenOpened": "2025-01-10T12:38:36.921Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SupplierAdd.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\SupplierAdd.cs",
-              "RelativeDocumentMoniker": "View\\Partners\\SupplierAdd.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\SupplierAdd.cs [Design]",
-              "RelativeToolTip": "View\\Partners\\SupplierAdd.cs [Design]",
+              "DocumentIndex": 5,
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Supplier.cs",
+              "RelativeDocumentMoniker": "Models\\Supplier.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Supplier.cs",
+              "RelativeToolTip": "Models\\Supplier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:33:09.121Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-01-10T04:29:51.484Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Customer.cs",
-              "RelativeToolTip": "Models\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:29:43.526Z",
+              "WhenOpened": "2025-01-10T12:55:35.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Purchase.cs",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Purchase.cs",
+              "RelativeDocumentMoniker": "Models\\Purchase.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Purchase.cs",
+              "RelativeToolTip": "Models\\Purchase.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T13:20:36.267Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "CustomerEdit.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\CustomerEdit.cs",
-              "RelativeDocumentMoniker": "View\\Partners\\CustomerEdit.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\CustomerEdit.cs [Design]",
-              "RelativeToolTip": "View\\Partners\\CustomerEdit.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:31:02.557Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Customer.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\Customer.cs",
-              "RelativeDocumentMoniker": "View\\Partners\\Customer.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\Customer.cs [Design]",
-              "RelativeToolTip": "View\\Partners\\Customer.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T07:44:20.019Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CustomerAdd.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\CustomerAdd.cs",
-              "RelativeDocumentMoniker": "View\\Partners\\CustomerAdd.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\CustomerAdd.cs [Design]",
-              "RelativeToolTip": "View\\Partners\\CustomerAdd.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:30:51.206Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "OrderInvoiceDetail.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Transactions\\OrderInvoiceDetail.cs",
-              "RelativeDocumentMoniker": "View\\Transactions\\OrderInvoiceDetail.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Transactions\\OrderInvoiceDetail.cs [Design]",
-              "RelativeToolTip": "View\\Transactions\\OrderInvoiceDetail.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:30:33.791Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GoodsReceiptDetail.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Transactions\\GoodsReceiptDetail.cs",
-              "RelativeDocumentMoniker": "View\\Transactions\\GoodsReceiptDetail.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Transactions\\GoodsReceiptDetail.cs [Design]",
-              "RelativeToolTip": "View\\Transactions\\GoodsReceiptDetail.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:29:54.408Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GoodsReceipt.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Transactions\\GoodsReceipt.cs",
-              "RelativeDocumentMoniker": "View\\Transactions\\GoodsReceipt.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Transactions\\GoodsReceipt.cs [Design]",
-              "RelativeToolTip": "View\\Transactions\\GoodsReceipt.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:28:11.095Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "ImportGoods.cs [Design]",
               "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Transactions\\ImportGoods.cs",
               "RelativeDocumentMoniker": "View\\Transactions\\ImportGoods.cs",
@@ -359,43 +308,92 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CategoryEdit.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\CategoryEdit.cs",
-              "RelativeDocumentMoniker": "View\\Goods\\CategoryEdit.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\CategoryEdit.cs [Design]",
-              "RelativeToolTip": "View\\Goods\\CategoryEdit.cs [Design]",
+              "DocumentIndex": 12,
+              "Title": "GoodsReceiptDetail.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Transactions\\GoodsReceiptDetail.cs",
+              "RelativeDocumentMoniker": "View\\Transactions\\GoodsReceiptDetail.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Transactions\\GoodsReceiptDetail.cs [Design]",
+              "RelativeToolTip": "View\\Transactions\\GoodsReceiptDetail.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T06:58:45.393Z",
+              "WhenOpened": "2025-01-10T15:25:48.105Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ProductAdd.cs [Design]",
+              "DocumentIndex": 7,
+              "Title": "ProductAdd.cs",
               "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\ProductAdd.cs",
               "RelativeDocumentMoniker": "View\\Goods\\ProductAdd.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\ProductAdd.cs [Design]",
-              "RelativeToolTip": "View\\Goods\\ProductAdd.cs [Design]",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\ProductAdd.cs",
+              "RelativeToolTip": "View\\Goods\\ProductAdd.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAD4vxIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:16:29.961Z",
+              "WhenOpened": "2025-01-10T14:18:37.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderInvoiceDetail.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Transactions\\OrderInvoiceDetail.cs",
+              "RelativeDocumentMoniker": "View\\Transactions\\OrderInvoiceDetail.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Transactions\\OrderInvoiceDetail.cs [Design]",
+              "RelativeToolTip": "View\\Transactions\\OrderInvoiceDetail.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T15:00:25.415Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 14,
+              "Title": "GoodsReceipt.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Transactions\\GoodsReceipt.cs",
+              "RelativeDocumentMoniker": "View\\Transactions\\GoodsReceipt.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Transactions\\GoodsReceipt.cs [Design]",
+              "RelativeToolTip": "View\\Transactions\\GoodsReceipt.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T08:28:11.095Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\MainForm.cs",
               "RelativeDocumentMoniker": "View\\MainForm.cs",
               "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\MainForm.cs [Design]",
               "RelativeToolTip": "View\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T14:43:11.858Z",
+              "WhenOpened": "2025-01-10T15:28:57.597Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 16,
+              "Title": "SupplierEdit.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\SupplierEdit.cs",
+              "RelativeDocumentMoniker": "View\\Partners\\SupplierEdit.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\SupplierEdit.cs [Design]",
+              "RelativeToolTip": "View\\Partners\\SupplierEdit.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T09:05:46.34Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Customer.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\Customer.cs",
+              "RelativeDocumentMoniker": "View\\Partners\\Customer.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\Customer.cs [Design]",
+              "RelativeToolTip": "View\\Partners\\Customer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T08:47:04.514Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "ProductDetail.cs [Design]",
               "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\ProductDetail.cs",
               "RelativeDocumentMoniker": "View\\Goods\\ProductDetail.cs",
@@ -407,32 +405,115 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\MainForm.cs",
-              "RelativeDocumentMoniker": "View\\MainForm.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\MainForm.cs",
-              "RelativeToolTip": "View\\MainForm.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAuwHIAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "OrderInvoice.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Transactions\\OrderInvoice.cs",
+              "RelativeDocumentMoniker": "View\\Transactions\\OrderInvoice.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Transactions\\OrderInvoice.cs [Design]",
+              "RelativeToolTip": "View\\Transactions\\OrderInvoice.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T14:42:38.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T14:58:55.704Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CategoryAdd.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\CategoryAdd.cs",
-              "RelativeDocumentMoniker": "View\\Goods\\CategoryAdd.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\CategoryAdd.cs [Design]",
-              "RelativeToolTip": "View\\Goods\\CategoryAdd.cs [Design]",
+              "DocumentIndex": 21,
+              "Title": "SupplierDetail.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\SupplierDetail.cs",
+              "RelativeDocumentMoniker": "View\\Partners\\SupplierDetail.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\SupplierDetail.cs [Design]",
+              "RelativeToolTip": "View\\Partners\\SupplierDetail.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:16:30.877Z",
+              "WhenOpened": "2025-01-10T08:33:17.235Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Employee.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Employees\\Employee.cs",
+              "RelativeDocumentMoniker": "View\\Employees\\Employee.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Employees\\Employee.cs [Design]",
+              "RelativeToolTip": "View\\Employees\\Employee.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T08:42:31.661Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SupplierAdd.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\SupplierAdd.cs",
+              "RelativeDocumentMoniker": "View\\Partners\\SupplierAdd.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\SupplierAdd.cs [Design]",
+              "RelativeToolTip": "View\\Partners\\SupplierAdd.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T14:43:12.201Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
+              "Title": "CustomerDetail.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\CustomerDetail.cs",
+              "RelativeDocumentMoniker": "View\\Partners\\CustomerDetail.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\CustomerDetail.cs [Design]",
+              "RelativeToolTip": "View\\Partners\\CustomerDetail.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T08:47:03.273Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CustomerAdd.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\CustomerAdd.cs",
+              "RelativeDocumentMoniker": "View\\Partners\\CustomerAdd.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\CustomerAdd.cs [Design]",
+              "RelativeToolTip": "View\\Partners\\CustomerAdd.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T14:38:36.273Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EmployeeAdd.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Employees\\EmployeeAdd.cs",
+              "RelativeDocumentMoniker": "View\\Employees\\EmployeeAdd.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Employees\\EmployeeAdd.cs [Design]",
+              "RelativeToolTip": "View\\Employees\\EmployeeAdd.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T08:51:38.371Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ProductAdd.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\ProductAdd.cs",
+              "RelativeDocumentMoniker": "View\\Goods\\ProductAdd.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\ProductAdd.cs [Design]",
+              "RelativeToolTip": "View\\Goods\\ProductAdd.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T14:19:20.519Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Supplier.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\Supplier.cs",
+              "RelativeDocumentMoniker": "View\\Partners\\Supplier.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Partners\\Supplier.cs [Design]",
+              "RelativeToolTip": "View\\Partners\\Supplier.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T09:05:44.73Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "ProductEdit.cs [Design]",
               "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\ProductEdit.cs",
               "RelativeDocumentMoniker": "View\\Goods\\ProductEdit.cs",
@@ -444,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "Product.cs [Design]",
               "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\Product.cs",
               "RelativeDocumentMoniker": "View\\Goods\\Product.cs",
@@ -456,111 +537,96 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Category.cs",
-              "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T06:46:07.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\Product.cs",
-              "RelativeDocumentMoniker": "View\\Goods\\Product.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\Product.cs",
-              "RelativeToolTip": "View\\Goods\\Product.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAgwDwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T06:40:41.765Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 30,
-              "Title": "EmployeeRole.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\EmployeeRole.cs",
-              "RelativeDocumentMoniker": "Models\\EmployeeRole.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\EmployeeRole.cs",
-              "RelativeToolTip": "Models\\EmployeeRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Title": "EmployeeEdit.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Employees\\EmployeeEdit.cs",
+              "RelativeDocumentMoniker": "View\\Employees\\EmployeeEdit.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Employees\\EmployeeEdit.cs [Design]",
+              "RelativeToolTip": "View\\Employees\\EmployeeEdit.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:29:41.407Z",
+              "WhenOpened": "2025-01-10T09:03:21.346Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ProductAdd.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\ProductAdd.Designer.cs",
+              "RelativeDocumentMoniker": "View\\Goods\\ProductAdd.Designer.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\ProductAdd.Designer.cs",
+              "RelativeToolTip": "View\\Goods\\ProductAdd.Designer.cs",
+              "ViewState": "AgIAAAsDAAAAAAAAAAAwwA8DAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T14:19:00.551Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "UserAccount.cs",
               "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\UserAccount.cs",
               "RelativeDocumentMoniker": "Models\\UserAccount.cs",
               "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\UserAccount.cs",
               "RelativeToolTip": "Models\\UserAccount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:29:50.499Z",
+              "WhenOpened": "2025-01-10T13:56:55.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "PurchaseDetail.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\PurchaseDetail.cs",
-              "RelativeDocumentMoniker": "Models\\PurchaseDetail.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\PurchaseDetail.cs",
-              "RelativeToolTip": "Models\\PurchaseDetail.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
+              "DocumentIndex": 35,
+              "Title": "CategoryEdit.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\CategoryEdit.cs",
+              "RelativeDocumentMoniker": "View\\Goods\\CategoryEdit.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\View\\Goods\\CategoryEdit.cs [Design]",
+              "RelativeToolTip": "View\\Goods\\CategoryEdit.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:29:53.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T13:46:09.32Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Services\\CategoryService.cs",
-              "RelativeDocumentMoniker": "Services\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Services\\CategoryService.cs",
-              "RelativeToolTip": "Services\\CategoryService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAkwBsAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 33,
+              "Title": "EmployeeRole.cs",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\EmployeeRole.cs",
+              "RelativeDocumentMoniker": "Models\\EmployeeRole.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\EmployeeRole.cs",
+              "RelativeToolTip": "Models\\EmployeeRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:27:13.823Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Supplier.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Supplier.cs",
-              "RelativeDocumentMoniker": "Models\\Supplier.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Supplier.cs",
-              "RelativeToolTip": "Models\\Supplier.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:29:51.484Z",
+              "WhenOpened": "2025-01-10T12:57:19.711Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Order.cs",
-              "RelativeToolTip": "Models\\Order.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAsAAAATAAAAAAAAAA==",
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Models\\Role.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Role.cs",
+              "RelativeToolTip": "Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T05:22:55.964Z",
+              "WhenOpened": "2025-01-10T12:57:08.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Models\\Customer.cs",
+              "RelativeToolTip": "Models\\Customer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T12:35:54.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\VivoBook\\Ta\u0300i li\u00EA\u0323u\\Pharmacy_System\\PharmacyManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -568,8 +634,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T03:15:19.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T03:15:19.896Z"
             }
           ]
         }

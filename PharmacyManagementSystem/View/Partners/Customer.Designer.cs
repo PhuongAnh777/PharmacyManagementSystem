@@ -40,20 +40,30 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             gridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            CustomerName = new DataGridViewTextBoxColumn();
+            PhoneNumber = new DataGridViewTextBoxColumn();
+            Email = new DataGridViewTextBoxColumn();
+            Address = new DataGridViewTextBoxColumn();
+            Amount = new DataGridViewTextBoxColumn();
             pnHeader = new Panel();
             btnXuatFile = new Guna.UI2.WinForms.Guna2Button();
             btnImport = new Guna.UI2.WinForms.Guna2Button();
             btnAdd = new Guna.UI2.WinForms.Guna2Button();
             tbxSearch = new Guna.UI2.WinForms.Guna2TextBox();
             lblHeader = new Label();
-            CustomerName = new DataGridViewTextBoxColumn();
-            PhoneNumber = new DataGridViewTextBoxColumn();
-            Email = new DataGridViewTextBoxColumn();
-            Address = new DataGridViewTextBoxColumn();
-            Amount = new DataGridViewTextBoxColumn();
+            pnFooter = new Panel();
+            lblSub = new Label();
+            lblPage = new Label();
+            btnSau = new Guna.UI2.WinForms.Guna2Button();
+            btnTruoc = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)gridView).BeginInit();
             pnHeader.SuspendLayout();
+            pnFooter.SuspendLayout();
             SuspendLayout();
             // 
             // gridView
@@ -98,7 +108,7 @@
             gridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             gridView.RowHeadersVisible = false;
             gridView.RowHeadersWidth = 51;
-            gridView.Size = new Size(1338, 606);
+            gridView.Size = new Size(1338, 556);
             gridView.TabIndex = 4;
             gridView.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             gridView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -121,6 +131,46 @@
             gridView.ThemeStyle.RowsStyle.Height = 29;
             gridView.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             gridView.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            // 
+            // CustomerName
+            // 
+            CustomerName.DataPropertyName = "CustomerName";
+            CustomerName.HeaderText = "Tên khách hàng";
+            CustomerName.MinimumWidth = 6;
+            CustomerName.Name = "CustomerName";
+            CustomerName.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // PhoneNumber
+            // 
+            PhoneNumber.DataPropertyName = "PhoneNumber";
+            PhoneNumber.HeaderText = "Điện thoại";
+            PhoneNumber.MinimumWidth = 6;
+            PhoneNumber.Name = "PhoneNumber";
+            PhoneNumber.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // Email
+            // 
+            Email.DataPropertyName = "Email";
+            Email.HeaderText = "Email";
+            Email.MinimumWidth = 6;
+            Email.Name = "Email";
+            Email.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // Address
+            // 
+            Address.DataPropertyName = "Address";
+            Address.HeaderText = "Địa chỉ";
+            Address.MinimumWidth = 6;
+            Address.Name = "Address";
+            Address.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // Amount
+            // 
+            Amount.DataPropertyName = "Amount";
+            Amount.HeaderText = "Tổng bán";
+            Amount.MinimumWidth = 6;
+            Amount.Name = "Amount";
+            Amount.SortMode = DataGridViewColumnSortMode.Programmatic;
             // 
             // pnHeader
             // 
@@ -216,51 +266,86 @@
             lblHeader.TabIndex = 0;
             lblHeader.Text = "Khách hàng";
             // 
-            // CustomerName
+            // pnFooter
             // 
-            CustomerName.DataPropertyName = "CustomerName";
-            CustomerName.HeaderText = "Tên khách hàng";
-            CustomerName.MinimumWidth = 6;
-            CustomerName.Name = "CustomerName";
-            CustomerName.SortMode = DataGridViewColumnSortMode.Programmatic;
+            pnFooter.Controls.Add(lblSub);
+            pnFooter.Controls.Add(lblPage);
+            pnFooter.Controls.Add(btnSau);
+            pnFooter.Controls.Add(btnTruoc);
+            pnFooter.Location = new Point(13, 625);
+            pnFooter.Name = "pnFooter";
+            pnFooter.Size = new Size(1338, 50);
+            pnFooter.TabIndex = 8;
             // 
-            // PhoneNumber
+            // lblSub
             // 
-            PhoneNumber.DataPropertyName = "PhoneNumber";
-            PhoneNumber.HeaderText = "Điện thoại";
-            PhoneNumber.MinimumWidth = 6;
-            PhoneNumber.Name = "PhoneNumber";
-            PhoneNumber.SortMode = DataGridViewColumnSortMode.Programmatic;
+            lblSub.AutoSize = true;
+            lblSub.Location = new Point(382, 12);
+            lblSub.Name = "lblSub";
+            lblSub.Size = new Size(312, 22);
+            lblSub.TabIndex = 3;
+            lblSub.Text = "Hiển thị 11 - 20 / Tổng số 32 hàng hóa";
             // 
-            // Email
+            // lblPage
             // 
-            Email.DataPropertyName = "Email";
-            Email.HeaderText = "Email";
-            Email.MinimumWidth = 6;
-            Email.Name = "Email";
-            Email.SortMode = DataGridViewColumnSortMode.Programmatic;
+            lblPage.AutoSize = true;
+            lblPage.ForeColor = Color.RoyalBlue;
+            lblPage.Location = new Point(185, 12);
+            lblPage.Name = "lblPage";
+            lblPage.Size = new Size(60, 22);
+            lblPage.TabIndex = 2;
+            lblPage.Text = "label1";
             // 
-            // Address
+            // btnSau
             // 
-            Address.DataPropertyName = "Address";
-            Address.HeaderText = "Địa chỉ";
-            Address.MinimumWidth = 6;
-            Address.Name = "Address";
-            Address.SortMode = DataGridViewColumnSortMode.Programmatic;
+            btnSau.BackColor = SystemColors.Control;
+            btnSau.BorderColor = Color.RoyalBlue;
+            btnSau.BorderRadius = 20;
+            btnSau.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnSau.BorderThickness = 1;
+            btnSau.CustomizableEdges = customizableEdges9;
+            btnSau.DisabledState.BorderColor = Color.DarkGray;
+            btnSau.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSau.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSau.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSau.FillColor = Color.White;
+            btnSau.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSau.ForeColor = Color.RoyalBlue;
+            btnSau.Location = new Point(295, 3);
+            btnSau.Name = "btnSau";
+            btnSau.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnSau.Size = new Size(81, 44);
+            btnSau.TabIndex = 1;
+            btnSau.Text = "Sau";
             // 
-            // Amount
+            // btnTruoc
             // 
-            Amount.DataPropertyName = "Amount";
-            Amount.HeaderText = "Tổng bán";
-            Amount.MinimumWidth = 6;
-            Amount.Name = "Amount";
-            Amount.SortMode = DataGridViewColumnSortMode.Programmatic;
+            btnTruoc.BackColor = SystemColors.Control;
+            btnTruoc.BorderColor = Color.RoyalBlue;
+            btnTruoc.BorderRadius = 20;
+            btnTruoc.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnTruoc.BorderThickness = 1;
+            btnTruoc.CustomizableEdges = customizableEdges11;
+            btnTruoc.DisabledState.BorderColor = Color.DarkGray;
+            btnTruoc.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnTruoc.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnTruoc.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnTruoc.FillColor = Color.White;
+            btnTruoc.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnTruoc.ForeColor = Color.RoyalBlue;
+            btnTruoc.Location = new Point(61, 3);
+            btnTruoc.Name = "btnTruoc";
+            btnTruoc.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btnTruoc.Size = new Size(81, 44);
+            btnTruoc.TabIndex = 0;
+            btnTruoc.Text = "Trước";
             // 
             // Customer
             // 
             AutoScaleDimensions = new SizeF(11F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1362, 678);
+            Controls.Add(pnFooter);
             Controls.Add(gridView);
             Controls.Add(pnHeader);
             Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -271,6 +356,8 @@
             ((System.ComponentModel.ISupportInitialize)gridView).EndInit();
             pnHeader.ResumeLayout(false);
             pnHeader.PerformLayout();
+            pnFooter.ResumeLayout(false);
+            pnFooter.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -288,5 +375,10 @@
         private DataGridViewTextBoxColumn Email;
         private DataGridViewTextBoxColumn Address;
         private DataGridViewTextBoxColumn Amount;
+        private Panel pnFooter;
+        private Label lblSub;
+        private Label lblPage;
+        private Guna.UI2.WinForms.Guna2Button btnSau;
+        private Guna.UI2.WinForms.Guna2Button btnTruoc;
     }
 }

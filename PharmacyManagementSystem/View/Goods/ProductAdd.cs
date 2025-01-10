@@ -21,5 +21,6 @@ namespace PharmacyManagementSystem.View.Goods
         {
             this.Close();
         }
+
     }
 }

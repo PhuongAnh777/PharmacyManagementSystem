@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PharmacyManagementSystem.Models;
 
@@ -11,9 +12,11 @@ using PharmacyManagementSystem.Models;
 namespace PharmacyManagementSystem.Migrations
 {
     [DbContext(typeof(PharmacyContext))]
-    partial class PharmacyContextModelSnapshot : ModelSnapshot
+    [Migration("20250110141122_Supplier")]
+    partial class Supplier
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -154,14 +157,11 @@ namespace PharmacyManagementSystem.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWID()");
 
-                    b.Property<Guid?>("CustomerID")
+                    b.Property<Guid>("CustomerID")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("EmployeeID")
+                    b.Property<Guid>("EmployeeID")
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Note")
-                        .HasColumnType("NVARCHAR(MAX)");
 
                     b.Property<DateTime>("OrderDate")
                         .ValueGeneratedOnAdd()
@@ -170,9 +170,7 @@ namespace PharmacyManagementSystem.Migrations
 
                     b.Property<string>("PaymentMethod")
                         .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("nvarchar(max)")
-                        .HasDefaultValue("CASH");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("TotalAmount")
                         .HasColumnType("DECIMAL(10,2)");
@@ -481,11 +479,13 @@ namespace PharmacyManagementSystem.Migrations
                     b.HasOne("PharmacyManagementSystem.Models.Customer", "Customer")
                         .WithMany("Orders")
                         .HasForeignKey("CustomerID")
+                        .IsRequired()
                         .HasConstraintName("FK_Orders_Customers");
 
                     b.HasOne("PharmacyManagementSystem.Models.Employee", "Employee")
                         .WithMany("Orders")
                         .HasForeignKey("EmployeeID")
+                        .IsRequired()
                         .HasConstraintName("FK_Orders_Employees");
 
                     b.Navigation("Customer");
@@ -523,8 +523,7 @@ namespace PharmacyManagementSystem.Migrations
                     b.HasOne("PharmacyManagementSystem.Models.Supplier", "Supplier")
                         .WithMany("Products")
                         .HasForeignKey("SupplierID")
-                        .OnDelete(DeleteBehavior.SetNull)
-                        .HasConstraintName("FK_Products_Suppliers");
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Category");
 

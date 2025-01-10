@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAEZTeXN0ZW0uV2luZG93cy5Gb3JtcywgQ3VsdHVyZT1uZXV0cmFs
         LCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAAAmU3lzdGVtLldpbmRvd3MuRm9ybXMu
         SW1hZ2VMaXN0U3RyZWFtZXIBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAtA0AAAJNU0Z0AUkBTAMBAQAB
-        CAEAAQgBAAEeAQABHgEABP8BIQEACP8BQgFNATYHAAE2AwABKAMAAXgDAAEeAwABAQEAASAFAAFAATgS
+        IAEAASABAAEeAQABHgEABP8BIQEACP8BQgFNATYHAAE2AwABKAMAAXgDAAEeAwABAQEAASAFAAFAATgS
         AAP3Af8D8gH/A/IB/wP6Bf8D6wH/A+YB/wP4Af8D/gH/A/MB/wPwAf8D+QX/A/sB/wPxAf8D7AH/A/kF
         /wP5Af8D6wH/A/AJ/wPyAf8D7wH/A/YB/wP8Af8D+gH/A/EB/wPqAf//AGkAA+8B/wPxAf8D+AH/A/kB
         /wP+Af8D8QH/A/UF/wP3Af8D8wH/A/EB/wP2Af8D+gH/A/kB/wP0Af8D8QH/A/cB/wP6Af8D+AH/A/IB
@@ -186,10 +186,25 @@
         AQUAAeABARYAA///AOIACw==
 </value>
   </data>
-  <metadata name="MaThuoc.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="ProductID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="TenThuoc.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Image.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ProductName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Category.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="SellingPrice.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="OriginalPrice.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Quantity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
 </root>
