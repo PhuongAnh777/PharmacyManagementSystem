@@ -7,7 +7,7 @@ namespace PharmacyManagementSystem.Models
     {
         public Guid ProductID { get; set; } // NCHAR(10)
         public string? MedicineID { get; set; }
-        public string RegistrationNumber { get; set; }
+        public string? RegistrationNumber { get; set; }
         public string? CountryOfOrigin {  get; set; }
 
         public string Name { get; set; } // NVARCHAR(100)

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "53i/32zlVAw=",
+  "dgSpecHash": "akkcoGe8/8M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\VivoBook\\Tài liệu\\Pharmacy_System\\PharmacyManagementSystem\\PharmacyManagementSystem.csproj",
+  "projectFilePath": "C:\\Users\\VivoBook\\Tài liệu\\Pharmacy\\PharmacyManagementSystem\\PharmacyManagementSystem\\PharmacyManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VivoBook\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\VivoBook\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

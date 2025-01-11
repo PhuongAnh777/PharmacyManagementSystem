@@ -60,8 +60,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             pnHeader = new Panel();
             btnBanHang = new Guna.UI2.WinForms.Guna2Button();
             btnBaoCao = new Guna.UI2.WinForms.Guna2Button();
@@ -79,7 +77,6 @@
             pnHangHoa = new Panel();
             btnDanhMuc = new Guna.UI2.WinForms.Guna2Button();
             btnKiemKho = new Guna.UI2.WinForms.Guna2Button();
-            btnDonThuocMau = new Guna.UI2.WinForms.Guna2Button();
             btnThuoc = new Guna.UI2.WinForms.Guna2Button();
             pnChild = new Panel();
             pnDoiTac = new Panel();
@@ -119,7 +116,7 @@
             btnBanHang.FillColor = Color.FromArgb(63, 142, 212);
             btnBanHang.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnBanHang.ForeColor = Color.White;
-            btnBanHang.Image = Properties.Resources.Eye_Icon;
+            btnBanHang.Image = Properties.Resources.default_featured_image_png;
             btnBanHang.ImageSize = new Size(30, 30);
             btnBanHang.Location = new Point(1203, 0);
             btnBanHang.Name = "btnBanHang";
@@ -127,6 +124,7 @@
             btnBanHang.Size = new Size(161, 56);
             btnBanHang.TabIndex = 12;
             btnBanHang.Text = "Bán hàng";
+            btnBanHang.Click += btnBanHang_Click;
             // 
             // btnBaoCao
             // 
@@ -278,6 +276,7 @@
             btnThemNhanVien.Size = new Size(214, 49);
             btnThemNhanVien.TabIndex = 9;
             btnThemNhanVien.Text = "Thêm nhân viên";
+            btnThemNhanVien.Click += btnThemNhanVien_Click;
             // 
             // btnNhanVien1
             // 
@@ -298,6 +297,7 @@
             btnNhanVien1.Size = new Size(150, 49);
             btnNhanVien1.TabIndex = 8;
             btnNhanVien1.Text = "Nhân viên";
+            btnNhanVien1.Click += btnNhanVien1_Click;
             // 
             // pnGiaoDich
             // 
@@ -329,6 +329,7 @@
             btnNhapHang.Size = new Size(173, 49);
             btnNhapHang.TabIndex = 9;
             btnNhapHang.Text = "Nhập hàng";
+            btnNhapHang.Click += btnNhapHang_Click;
             // 
             // btnHoaDon
             // 
@@ -349,17 +350,17 @@
             btnHoaDon.Size = new Size(150, 49);
             btnHoaDon.TabIndex = 8;
             btnHoaDon.Text = "Hóa đơn";
+            btnHoaDon.Click += btnHoaDon_Click;
             // 
             // pnHangHoa
             // 
             pnHangHoa.BackColor = Color.FromArgb(63, 142, 212);
             pnHangHoa.Controls.Add(btnDanhMuc);
             pnHangHoa.Controls.Add(btnKiemKho);
-            pnHangHoa.Controls.Add(btnDonThuocMau);
             pnHangHoa.Controls.Add(btnThuoc);
             pnHangHoa.Location = new Point(188, 0);
             pnHangHoa.Name = "pnHangHoa";
-            pnHangHoa.Size = new Size(255, 228);
+            pnHangHoa.Size = new Size(255, 174);
             pnHangHoa.TabIndex = 1;
             pnHangHoa.Visible = false;
             // 
@@ -397,37 +398,17 @@
             btnKiemKho.ForeColor = Color.White;
             btnKiemKho.Image = Properties.Resources.Eye_Icon;
             btnKiemKho.ImageSize = new Size(30, 30);
-            btnKiemKho.Location = new Point(0, 171);
+            btnKiemKho.Location = new Point(0, 116);
             btnKiemKho.Name = "btnKiemKho";
             btnKiemKho.ShadowDecoration.CustomizableEdges = customizableEdges26;
             btnKiemKho.Size = new Size(161, 49);
             btnKiemKho.TabIndex = 12;
             btnKiemKho.Text = "Kiểm kho";
             // 
-            // btnDonThuocMau
-            // 
-            btnDonThuocMau.BackColor = Color.FromArgb(63, 142, 212);
-            btnDonThuocMau.CustomizableEdges = customizableEdges27;
-            btnDonThuocMau.DisabledState.BorderColor = Color.DarkGray;
-            btnDonThuocMau.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnDonThuocMau.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnDonThuocMau.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnDonThuocMau.FillColor = Color.FromArgb(63, 142, 212);
-            btnDonThuocMau.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnDonThuocMau.ForeColor = Color.White;
-            btnDonThuocMau.Image = Properties.Resources.Eye_Icon;
-            btnDonThuocMau.ImageSize = new Size(30, 30);
-            btnDonThuocMau.Location = new Point(3, 116);
-            btnDonThuocMau.Name = "btnDonThuocMau";
-            btnDonThuocMau.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            btnDonThuocMau.Size = new Size(204, 49);
-            btnDonThuocMau.TabIndex = 10;
-            btnDonThuocMau.Text = "Đơn thuốc mẫu";
-            // 
             // btnThuoc
             // 
             btnThuoc.BackColor = Color.FromArgb(63, 142, 212);
-            btnThuoc.CustomizableEdges = customizableEdges29;
+            btnThuoc.CustomizableEdges = customizableEdges27;
             btnThuoc.DisabledState.BorderColor = Color.DarkGray;
             btnThuoc.DisabledState.CustomBorderColor = Color.DarkGray;
             btnThuoc.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -439,7 +420,7 @@
             btnThuoc.ImageSize = new Size(30, 30);
             btnThuoc.Location = new Point(0, 61);
             btnThuoc.Name = "btnThuoc";
-            btnThuoc.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            btnThuoc.ShadowDecoration.CustomizableEdges = customizableEdges28;
             btnThuoc.Size = new Size(128, 49);
             btnThuoc.TabIndex = 9;
             btnThuoc.Text = "Thuốc";
@@ -470,7 +451,7 @@
             // btnNhaCungCap
             // 
             btnNhaCungCap.BackColor = Color.FromArgb(63, 142, 212);
-            btnNhaCungCap.CustomizableEdges = customizableEdges31;
+            btnNhaCungCap.CustomizableEdges = customizableEdges29;
             btnNhaCungCap.DisabledState.BorderColor = Color.DarkGray;
             btnNhaCungCap.DisabledState.CustomBorderColor = Color.DarkGray;
             btnNhaCungCap.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -482,15 +463,16 @@
             btnNhaCungCap.ImageSize = new Size(30, 30);
             btnNhaCungCap.Location = new Point(0, 61);
             btnNhaCungCap.Name = "btnNhaCungCap";
-            btnNhaCungCap.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            btnNhaCungCap.ShadowDecoration.CustomizableEdges = customizableEdges30;
             btnNhaCungCap.Size = new Size(192, 49);
             btnNhaCungCap.TabIndex = 9;
             btnNhaCungCap.Text = "Nhà cung cấp";
+            btnNhaCungCap.Click += btnNhaCungCap_Click;
             // 
             // btnKhachHang
             // 
             btnKhachHang.BackColor = Color.FromArgb(63, 142, 212);
-            btnKhachHang.CustomizableEdges = customizableEdges33;
+            btnKhachHang.CustomizableEdges = customizableEdges31;
             btnKhachHang.DisabledState.BorderColor = Color.DarkGray;
             btnKhachHang.DisabledState.CustomBorderColor = Color.DarkGray;
             btnKhachHang.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -502,10 +484,11 @@
             btnKhachHang.ImageSize = new Size(30, 30);
             btnKhachHang.Location = new Point(0, 3);
             btnKhachHang.Name = "btnKhachHang";
-            btnKhachHang.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            btnKhachHang.ShadowDecoration.CustomizableEdges = customizableEdges32;
             btnKhachHang.Size = new Size(177, 49);
             btnKhachHang.TabIndex = 8;
             btnKhachHang.Text = "Khách hàng";
+            btnKhachHang.Click += btnKhachHang_Click;
             // 
             // MainForm
             // 
@@ -535,7 +518,6 @@
         private Panel pnChild;
         private Guna.UI2.WinForms.Guna2Button btnTongQuan;
         private Guna.UI2.WinForms.Guna2Button btnHangHoa;
-        private Guna.UI2.WinForms.Guna2Button btnDonThuocMau;
         private Guna.UI2.WinForms.Guna2Button btnThuoc;
         private Guna.UI2.WinForms.Guna2Button btnDanhMuc;
         private Guna.UI2.WinForms.Guna2Button btnKiemKho;

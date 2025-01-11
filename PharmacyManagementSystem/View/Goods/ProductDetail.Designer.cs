@@ -28,17 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblHeader = new Label();
             pnImage = new Panel();
             pnLeft = new Panel();
+            lblNgayHetHanV = new Label();
+            lblNgayHetHan = new Label();
+            pnLineA7 = new Panel();
             lblNhaCCV = new Label();
             lblNhaCC = new Label();
             lblGiaVonV = new Label();
@@ -46,15 +49,16 @@
             lblGiaBanV = new Label();
             lblGiaBan = new Label();
             lblTonKhoV = new Label();
-            lblTonKho = new Label();
             lblNhomHangV = new Label();
+            lblDonViTinhV = new Label();
             lblNhomHang = new Label();
+            lblTonKho = new Label();
+            lblDonViTinh = new Label();
             pnLineA6 = new Panel();
             pnLineA5 = new Panel();
             pnLineA4 = new Panel();
             pnLineA3 = new Panel();
             pnLineA2 = new Panel();
-            lblDonViTinhV = new Label();
             lblMaHangV = new Label();
             lblMaHang = new Label();
             pnLineA1 = new Panel();
@@ -64,6 +68,9 @@
             btnNgungKinhDoanh = new Guna.UI2.WinForms.Guna2Button();
             btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             pnRight = new Panel();
+            lblHienTrangV = new Label();
+            lblHienTrang = new Label();
+            panel1 = new Panel();
             lblDongGoiV = new Label();
             lblDongGoi = new Label();
             label3 = new Label();
@@ -86,13 +93,6 @@
             pnLineB1 = new Panel();
             lblMoTa = new Label();
             btnBack = new Guna.UI2.WinForms.Guna2Button();
-            lblDonViTinh = new Label();
-            pnLineA7 = new Panel();
-            lblNgayHetHan = new Label();
-            lblNgayHetHanV = new Label();
-            panel1 = new Panel();
-            lblHienTrang = new Label();
-            lblHienTrangV = new Label();
             pnLeft.SuspendLayout();
             pnFooter.SuspendLayout();
             pnRight.SuspendLayout();
@@ -145,6 +145,32 @@
             pnLeft.Name = "pnLeft";
             pnLeft.Size = new Size(423, 419);
             pnLeft.TabIndex = 2;
+            // 
+            // lblNgayHetHanV
+            // 
+            lblNgayHetHanV.AutoSize = true;
+            lblNgayHetHanV.Location = new Point(142, 382);
+            lblNgayHetHanV.Name = "lblNgayHetHanV";
+            lblNgayHetHanV.Size = new Size(117, 22);
+            lblNgayHetHanV.TabIndex = 23;
+            lblNgayHetHanV.Text = "Ngày hết hạn:";
+            // 
+            // lblNgayHetHan
+            // 
+            lblNgayHetHan.AutoSize = true;
+            lblNgayHetHan.Location = new Point(15, 382);
+            lblNgayHetHan.Name = "lblNgayHetHan";
+            lblNgayHetHan.Size = new Size(117, 22);
+            lblNgayHetHan.TabIndex = 22;
+            lblNgayHetHan.Text = "Ngày hết hạn:";
+            // 
+            // pnLineA7
+            // 
+            pnLineA7.BackColor = Color.Silver;
+            pnLineA7.Location = new Point(15, 365);
+            pnLineA7.Name = "pnLineA7";
+            pnLineA7.Size = new Size(405, 1);
+            pnLineA7.TabIndex = 10;
             // 
             // lblNhaCCV
             // 
@@ -209,15 +235,6 @@
             lblTonKhoV.TabIndex = 15;
             lblTonKhoV.Text = "BPGT";
             // 
-            // lblTonKho
-            // 
-            lblTonKho.AutoSize = true;
-            lblTonKho.Location = new Point(13, 225);
-            lblTonKho.Name = "lblTonKho";
-            lblTonKho.Size = new Size(80, 22);
-            lblTonKho.TabIndex = 14;
-            lblTonKho.Text = "Tồn kho:";
-            // 
             // lblNhomHangV
             // 
             lblNhomHangV.AutoSize = true;
@@ -227,6 +244,15 @@
             lblNhomHangV.TabIndex = 13;
             lblNhomHangV.Text = "Thực phẩm chức năng";
             // 
+            // lblDonViTinhV
+            // 
+            lblDonViTinhV.AutoSize = true;
+            lblDonViTinhV.Location = new Point(142, 278);
+            lblDonViTinhV.Name = "lblDonViTinhV";
+            lblDonViTinhV.Size = new Size(60, 22);
+            lblDonViTinhV.TabIndex = 4;
+            lblDonViTinhV.Text = "label1";
+            // 
             // lblNhomHang
             // 
             lblNhomHang.AutoSize = true;
@@ -235,6 +261,24 @@
             lblNhomHang.Size = new Size(104, 22);
             lblNhomHang.TabIndex = 12;
             lblNhomHang.Text = "Nhóm hàng:";
+            // 
+            // lblTonKho
+            // 
+            lblTonKho.AutoSize = true;
+            lblTonKho.Location = new Point(13, 225);
+            lblTonKho.Name = "lblTonKho";
+            lblTonKho.Size = new Size(80, 22);
+            lblTonKho.TabIndex = 14;
+            lblTonKho.Text = "Tồn kho:";
+            // 
+            // lblDonViTinh
+            // 
+            lblDonViTinh.AutoSize = true;
+            lblDonViTinh.Location = new Point(13, 278);
+            lblDonViTinh.Name = "lblDonViTinh";
+            lblDonViTinh.Size = new Size(105, 22);
+            lblDonViTinh.TabIndex = 3;
+            lblDonViTinh.Text = "Đơn vị tính:";
             // 
             // pnLineA6
             // 
@@ -275,15 +319,6 @@
             pnLineA2.Name = "pnLineA2";
             pnLineA2.Size = new Size(405, 1);
             pnLineA2.TabIndex = 5;
-            // 
-            // lblDonViTinhV
-            // 
-            lblDonViTinhV.AutoSize = true;
-            lblDonViTinhV.Location = new Point(142, 278);
-            lblDonViTinhV.Name = "lblDonViTinhV";
-            lblDonViTinhV.Size = new Size(60, 22);
-            lblDonViTinhV.TabIndex = 4;
-            lblDonViTinhV.Text = "label1";
             // 
             // lblMaHangV
             // 
@@ -331,7 +366,7 @@
             // 
             // btnXoa
             // 
-            btnXoa.CustomizableEdges = customizableEdges9;
+            btnXoa.CustomizableEdges = customizableEdges1;
             btnXoa.DisabledState.BorderColor = Color.DarkGray;
             btnXoa.DisabledState.CustomBorderColor = Color.DarkGray;
             btnXoa.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -341,14 +376,14 @@
             btnXoa.ForeColor = Color.White;
             btnXoa.Location = new Point(656, 5);
             btnXoa.Name = "btnXoa";
-            btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnXoa.Size = new Size(177, 42);
             btnXoa.TabIndex = 5;
             btnXoa.Text = "Xóa";
             // 
             // btnNgungKinhDoanh
             // 
-            btnNgungKinhDoanh.CustomizableEdges = customizableEdges11;
+            btnNgungKinhDoanh.CustomizableEdges = customizableEdges3;
             btnNgungKinhDoanh.DisabledState.BorderColor = Color.DarkGray;
             btnNgungKinhDoanh.DisabledState.CustomBorderColor = Color.DarkGray;
             btnNgungKinhDoanh.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -358,14 +393,14 @@
             btnNgungKinhDoanh.ForeColor = Color.White;
             btnNgungKinhDoanh.Location = new Point(419, 5);
             btnNgungKinhDoanh.Name = "btnNgungKinhDoanh";
-            btnNgungKinhDoanh.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btnNgungKinhDoanh.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnNgungKinhDoanh.Size = new Size(219, 42);
             btnNgungKinhDoanh.TabIndex = 4;
             btnNgungKinhDoanh.Text = "Ngừng kinh doanh";
             // 
             // btnUpdate
             // 
-            btnUpdate.CustomizableEdges = customizableEdges13;
+            btnUpdate.CustomizableEdges = customizableEdges5;
             btnUpdate.DisabledState.BorderColor = Color.DarkGray;
             btnUpdate.DisabledState.CustomBorderColor = Color.DarkGray;
             btnUpdate.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -375,7 +410,7 @@
             btnUpdate.ForeColor = Color.White;
             btnUpdate.Location = new Point(223, 5);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnUpdate.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnUpdate.Size = new Size(177, 42);
             btnUpdate.TabIndex = 3;
             btnUpdate.Text = "Cập nhật";
@@ -409,6 +444,32 @@
             pnRight.Name = "pnRight";
             pnRight.Size = new Size(423, 419);
             pnRight.TabIndex = 5;
+            // 
+            // lblHienTrangV
+            // 
+            lblHienTrangV.AutoSize = true;
+            lblHienTrangV.Location = new Point(181, 382);
+            lblHienTrangV.Name = "lblHienTrangV";
+            lblHienTrangV.Size = new Size(55, 22);
+            lblHienTrangV.TabIndex = 24;
+            lblHienTrangV.Text = "HXM";
+            // 
+            // lblHienTrang
+            // 
+            lblHienTrang.AutoSize = true;
+            lblHienTrang.Location = new Point(15, 382);
+            lblHienTrang.Name = "lblHienTrang";
+            lblHienTrang.Size = new Size(98, 22);
+            lblHienTrang.TabIndex = 23;
+            lblHienTrang.Text = "Hiện trạng:";
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Silver;
+            panel1.Location = new Point(15, 365);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(405, 1);
+            panel1.TabIndex = 22;
             // 
             // lblDongGoiV
             // 
@@ -595,7 +656,7 @@
             // 
             // btnBack
             // 
-            btnBack.CustomizableEdges = customizableEdges15;
+            btnBack.CustomizableEdges = customizableEdges7;
             btnBack.DisabledState.BorderColor = Color.DarkGray;
             btnBack.DisabledState.CustomBorderColor = Color.DarkGray;
             btnBack.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -604,72 +665,11 @@
             btnBack.ForeColor = Color.White;
             btnBack.Location = new Point(1237, 2);
             btnBack.Name = "btnBack";
-            btnBack.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btnBack.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btnBack.Size = new Size(82, 37);
             btnBack.TabIndex = 12;
             btnBack.Text = "Back";
             btnBack.Click += btnBack_Click;
-            // 
-            // lblDonViTinh
-            // 
-            lblDonViTinh.AutoSize = true;
-            lblDonViTinh.Location = new Point(13, 278);
-            lblDonViTinh.Name = "lblDonViTinh";
-            lblDonViTinh.Size = new Size(105, 22);
-            lblDonViTinh.TabIndex = 3;
-            lblDonViTinh.Text = "Đơn vị tính:";
-            // 
-            // pnLineA7
-            // 
-            pnLineA7.BackColor = Color.Silver;
-            pnLineA7.Location = new Point(15, 365);
-            pnLineA7.Name = "pnLineA7";
-            pnLineA7.Size = new Size(405, 1);
-            pnLineA7.TabIndex = 10;
-            // 
-            // lblNgayHetHan
-            // 
-            lblNgayHetHan.AutoSize = true;
-            lblNgayHetHan.Location = new Point(15, 382);
-            lblNgayHetHan.Name = "lblNgayHetHan";
-            lblNgayHetHan.Size = new Size(117, 22);
-            lblNgayHetHan.TabIndex = 22;
-            lblNgayHetHan.Text = "Ngày hết hạn:";
-            // 
-            // lblNgayHetHanV
-            // 
-            lblNgayHetHanV.AutoSize = true;
-            lblNgayHetHanV.Location = new Point(142, 382);
-            lblNgayHetHanV.Name = "lblNgayHetHanV";
-            lblNgayHetHanV.Size = new Size(117, 22);
-            lblNgayHetHanV.TabIndex = 23;
-            lblNgayHetHanV.Text = "Ngày hết hạn:";
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.Silver;
-            panel1.Location = new Point(15, 365);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(405, 1);
-            panel1.TabIndex = 22;
-            // 
-            // lblHienTrang
-            // 
-            lblHienTrang.AutoSize = true;
-            lblHienTrang.Location = new Point(15, 382);
-            lblHienTrang.Name = "lblHienTrang";
-            lblHienTrang.Size = new Size(98, 22);
-            lblHienTrang.TabIndex = 23;
-            lblHienTrang.Text = "Hiện trạng:";
-            // 
-            // lblHienTrangV
-            // 
-            lblHienTrangV.AutoSize = true;
-            lblHienTrangV.Location = new Point(181, 382);
-            lblHienTrangV.Name = "lblHienTrangV";
-            lblHienTrangV.Size = new Size(55, 22);
-            lblHienTrangV.TabIndex = 24;
-            lblHienTrangV.Text = "HXM";
             // 
             // ProductDetail
             // 
@@ -690,6 +690,7 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "ProductDetail";
             Text = "MedicineDetail";
+            Load += ProductDetail_Load;
             pnLeft.ResumeLayout(false);
             pnLeft.PerformLayout();
             pnFooter.ResumeLayout(false);

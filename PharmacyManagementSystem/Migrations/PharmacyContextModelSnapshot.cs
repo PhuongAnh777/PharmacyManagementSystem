@@ -275,7 +275,6 @@ namespace PharmacyManagementSystem.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("RegistrationNumber")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 

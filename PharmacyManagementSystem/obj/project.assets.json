@@ -5130,11 +5130,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VivoBook\\Tài liệu\\Pharmacy_System\\PharmacyManagementSystem\\PharmacyManagementSystem.csproj",
+      "projectUniqueName": "C:\\Users\\VivoBook\\Tài liệu\\Pharmacy\\PharmacyManagementSystem\\PharmacyManagementSystem\\PharmacyManagementSystem.csproj",
       "projectName": "PharmacyManagementSystem",
-      "projectPath": "C:\\Users\\VivoBook\\Tài liệu\\Pharmacy_System\\PharmacyManagementSystem\\PharmacyManagementSystem.csproj",
+      "projectPath": "C:\\Users\\VivoBook\\Tài liệu\\Pharmacy\\PharmacyManagementSystem\\PharmacyManagementSystem\\PharmacyManagementSystem.csproj",
       "packagesPath": "C:\\Users\\VivoBook\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VivoBook\\Tài liệu\\Pharmacy_System\\PharmacyManagementSystem\\obj\\",
+      "outputPath": "C:\\Users\\VivoBook\\Tài liệu\\Pharmacy\\PharmacyManagementSystem\\PharmacyManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

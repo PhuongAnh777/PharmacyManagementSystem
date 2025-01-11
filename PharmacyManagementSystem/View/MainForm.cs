@@ -1,14 +1,20 @@
 ﻿using System.Windows.Forms;
 using Guna.UI2.WinForms;
+using PharmacyManagementSystem.Models;
 using PharmacyManagementSystem.View.Goods;
+using PharmacyManagementSystem.View.Partners;
+using PharmacyManagementSystem.View.Staffs;
+using PharmacyManagementSystem.View.Transactions;
+using Customer = PharmacyManagementSystem.View.Partners.Customer;
+using Employee = PharmacyManagementSystem.View.Staffs.Employee;
+using Product = PharmacyManagementSystem.View.Goods.Product;
+using Supplier = PharmacyManagementSystem.View.Partners.Supplier;
 using Timer = System.Windows.Forms.Timer;
 
 namespace PharmacyManagementSystem
 {
     public partial class MainForm : Form
     {
-        private Dictionary<Panel, Timer> panelTimers = new Dictionary<Panel, Timer>();
-        private Dictionary<Control, bool> mouseStates = new Dictionary<Control, bool>();
         public MainForm()
         {
             InitializeComponent();
@@ -114,6 +120,40 @@ namespace PharmacyManagementSystem
         {
             //CreateFormChild(new MedicineCategoryAdd());
         }
-        
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            CreateFormChild(new OrderInvoice());
+        }
+
+        private void btnNhapHang_Click(object sender, EventArgs e)
+        {
+            CreateFormChild(new GoodsReceipt());
+        }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            CreateFormChild(new Customer());
+        }
+
+        private void btnNhaCungCap_Click(object sender, EventArgs e)
+        {
+            CreateFormChild(new Supplier());
+        }
+
+        private void btnNhanVien1_Click(object sender, EventArgs e)
+        {
+            CreateFormChild(new Employee());
+        }
+
+        private void btnThemNhanVien_Click(object sender, EventArgs e)
+        {
+            CreateFormChild(new EmployeeAdd());
+        }
+
+        private void btnBanHang_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

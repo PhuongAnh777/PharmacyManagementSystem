@@ -93,7 +93,7 @@ namespace PharmacyManagementSystem.Models
 
                 entity.Property(m => m.MedicineID).IsRequired(false).HasMaxLength(50);
 
-                entity.Property(m => m.RegistrationNumber).HasMaxLength(100).IsRequired();
+                entity.Property(m => m.RegistrationNumber).HasMaxLength(100);
                 entity.Property(m => m.CountryOfOrigin).HasMaxLength(100).IsRequired(false); 
                 entity.Property(m => m.OriginalPrice).IsRequired().HasColumnType("decimal(10,2)");
                 entity.Property(m => m.SellingPrice).IsRequired(false).HasColumnType("decimal(10,2)");

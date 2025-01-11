@@ -38,8 +38,6 @@
 
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Resoures\" />
-    <Folder Include="Resoures\Icon\" />
     <Folder Include="View\Reports\" />
   </ItemGroup>
 

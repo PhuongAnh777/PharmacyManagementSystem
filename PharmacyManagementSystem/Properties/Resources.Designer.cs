@@ -63,6 +63,16 @@ namespace PharmacyManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap default_featured_image_png {
+            get {
+                object obj = ResourceManager.GetObject("default-featured-image.png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Eye_Icon {
             get {
                 object obj = ResourceManager.GetObject("Eye_Icon", resourceCulture);
