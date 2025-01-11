@@ -26,7 +26,7 @@ namespace PharmacyManagementSystem.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=LAPTOP-APUENFVC\\SQLEXPRESS;Database=Pharmacy;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true");
+                optionsBuilder.UseSqlServer("Server=LAPTOP-APUENFVC\\SQLEXPRESS;Database=NhaThuoc;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true");
             }
         }
         public DbSet<Customer> Customers { get; set; }
@@ -81,13 +81,13 @@ namespace PharmacyManagementSystem.Models
                 entity.HasKey(e => e.ProductID);
                 entity.Property(ua => ua.ProductID).HasDefaultValueSql("NEWID()");
                 entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
-                entity.Property(e => e.ActiveIngredient).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.ActiveIngredient).HasMaxLength(100);
                 entity.Property(e => e.Dosage).HasMaxLength(50);
-                entity.Property(e => e.Packaging).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.Packaging).HasMaxLength(100);
                 entity.Property(e => e.Unit).HasMaxLength(50);
-                entity.Property(e => e.Manufacturer).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.Manufacturer).HasMaxLength(100);
                 entity.Property(e => e.StockQuantity).IsRequired();
-                entity.Property(e => e.ExpiryDate).HasColumnType("DATE").IsRequired();
+                entity.Property(e => e.ExpiryDate).HasColumnType("datetime");
                 entity.Property(e => e.Image).HasMaxLength(100);
                 entity.Property(p => p.IsDiscontinued).IsRequired().HasDefaultValue(false);
 
@@ -96,7 +96,7 @@ namespace PharmacyManagementSystem.Models
                 entity.Property(m => m.RegistrationNumber).HasMaxLength(100);
                 entity.Property(m => m.CountryOfOrigin).HasMaxLength(100).IsRequired(false); 
                 entity.Property(m => m.OriginalPrice).IsRequired().HasColumnType("decimal(10,2)");
-                entity.Property(m => m.SellingPrice).IsRequired(false).HasColumnType("decimal(10,2)");
+                entity.Property(m => m.SellingPrice).IsRequired().HasColumnType("decimal(10,2)");
                 entity.Property(m => m.Description).IsRequired(false).HasColumnType("nvarchar(max)");
                 entity.Property(p => p.SupplierID).IsRequired(false);
 
@@ -105,12 +105,12 @@ namespace PharmacyManagementSystem.Models
                     .HasForeignKey(d => d.SupplierID)
                     .OnDelete(DeleteBehavior.SetNull)
                     .HasConstraintName("FK_Products_Suppliers");
-                //entity.Property(p => p.CategoryID).IsRequired();
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.Products)
                     .HasForeignKey(d => d.CategoryID)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Product_Category");
+                //entity.Property(p => p.CategoryID).IsRequired();
                 
             });
 

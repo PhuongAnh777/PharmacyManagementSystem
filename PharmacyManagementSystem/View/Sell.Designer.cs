@@ -28,47 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             pnHeader = new Panel();
+            cbxNhanVien = new Guna.UI2.WinForms.Guna2ComboBox();
+            lblNhanVien = new Label();
+            cbxKhachHang = new Guna.UI2.WinForms.Guna2ComboBox();
+            lblKhachHang = new Label();
             tbxSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            pnProduct = new Panel();
-            lblIndex = new Label();
-            lblName = new Label();
-            numeric = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            lblGia = new Label();
-            lblTongGia = new Label();
+            pnSearch = new FlowLayoutPanel();
             pnLeft = new FlowLayoutPanel();
             pnRight = new FlowLayoutPanel();
             pnTotalAmount = new Panel();
+            lblTong = new Label();
             lblTongTienHang = new Label();
-            lblSoLuong = new Label();
-            lblTongTienV = new Label();
             btnThanhToan = new Guna.UI2.WinForms.Guna2Button();
-            lblKhachHang = new Label();
-            cbxKhachHang = new Guna.UI2.WinForms.Guna2ComboBox();
-            cbxNhanVien = new Guna.UI2.WinForms.Guna2ComboBox();
-            lblNhanVien = new Label();
-            pnSearch = new FlowLayoutPanel();
             pnHeader.SuspendLayout();
-            pnProduct.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numeric).BeginInit();
-            pnLeft.SuspendLayout();
             pnTotalAmount.SuspendLayout();
             SuspendLayout();
             // 
             // pnHeader
             // 
             pnHeader.BackColor = Color.FromArgb(63, 142, 212);
-            pnHeader.Controls.Add(pnSearch);
             pnHeader.Controls.Add(cbxNhanVien);
             pnHeader.Controls.Add(lblNhanVien);
             pnHeader.Controls.Add(cbxKhachHang);
@@ -78,189 +65,6 @@
             pnHeader.Name = "pnHeader";
             pnHeader.Size = new Size(1363, 67);
             pnHeader.TabIndex = 0;
-            // 
-            // tbxSearch
-            // 
-            tbxSearch.BorderRadius = 10;
-            tbxSearch.CustomizableEdges = customizableEdges5;
-            tbxSearch.DefaultText = "";
-            tbxSearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            tbxSearch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            tbxSearch.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            tbxSearch.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            tbxSearch.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            tbxSearch.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tbxSearch.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tbxSearch.Location = new Point(13, 4);
-            tbxSearch.Margin = new Padding(4);
-            tbxSearch.Name = "tbxSearch";
-            tbxSearch.PasswordChar = '\0';
-            tbxSearch.PlaceholderText = "Tìm sản phẩm";
-            tbxSearch.SelectedText = "";
-            tbxSearch.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            tbxSearch.Size = new Size(441, 59);
-            tbxSearch.TabIndex = 2;
-            // 
-            // pnProduct
-            // 
-            pnProduct.BackColor = Color.White;
-            pnProduct.Controls.Add(lblTongGia);
-            pnProduct.Controls.Add(lblGia);
-            pnProduct.Controls.Add(numeric);
-            pnProduct.Controls.Add(lblName);
-            pnProduct.Controls.Add(lblIndex);
-            pnProduct.Location = new Point(3, 3);
-            pnProduct.Name = "pnProduct";
-            pnProduct.Size = new Size(708, 90);
-            pnProduct.TabIndex = 0;
-            // 
-            // lblIndex
-            // 
-            lblIndex.AutoSize = true;
-            lblIndex.Location = new Point(5, 26);
-            lblIndex.Name = "lblIndex";
-            lblIndex.Size = new Size(20, 22);
-            lblIndex.TabIndex = 0;
-            lblIndex.Text = "1";
-            // 
-            // lblName
-            // 
-            lblName.AutoSize = true;
-            lblName.Location = new Point(45, 24);
-            lblName.Name = "lblName";
-            lblName.Size = new Size(140, 22);
-            lblName.TabIndex = 1;
-            lblName.Text = "Dầu gấc lên men";
-            // 
-            // numeric
-            // 
-            numeric.BackColor = Color.Transparent;
-            numeric.CustomizableEdges = customizableEdges7;
-            numeric.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            numeric.Location = new Point(215, 10);
-            numeric.Margin = new Padding(3, 4, 3, 4);
-            numeric.Name = "numeric";
-            numeric.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            numeric.Size = new Size(125, 38);
-            numeric.TabIndex = 2;
-            // 
-            // lblGia
-            // 
-            lblGia.AutoSize = true;
-            lblGia.Location = new Point(402, 26);
-            lblGia.Name = "lblGia";
-            lblGia.Size = new Size(75, 22);
-            lblGia.TabIndex = 3;
-            lblGia.Text = "800,000";
-            // 
-            // lblTongGia
-            // 
-            lblTongGia.AutoSize = true;
-            lblTongGia.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTongGia.Location = new Point(516, 24);
-            lblTongGia.Name = "lblTongGia";
-            lblTongGia.Size = new Size(75, 23);
-            lblTongGia.TabIndex = 4;
-            lblTongGia.Text = "800,000";
-            // 
-            // pnLeft
-            // 
-            pnLeft.AutoScroll = true;
-            pnLeft.BackColor = SystemColors.Control;
-            pnLeft.Controls.Add(pnProduct);
-            pnLeft.Location = new Point(3, 70);
-            pnLeft.Name = "pnLeft";
-            pnLeft.Size = new Size(723, 594);
-            pnLeft.TabIndex = 3;
-            // 
-            // pnRight
-            // 
-            pnRight.Location = new Point(731, 69);
-            pnRight.Name = "pnRight";
-            pnRight.Size = new Size(632, 595);
-            pnRight.TabIndex = 4;
-            // 
-            // pnTotalAmount
-            // 
-            pnTotalAmount.Controls.Add(lblTongTienV);
-            pnTotalAmount.Controls.Add(lblSoLuong);
-            pnTotalAmount.Controls.Add(lblTongTienHang);
-            pnTotalAmount.Location = new Point(3, 671);
-            pnTotalAmount.Name = "pnTotalAmount";
-            pnTotalAmount.Size = new Size(723, 63);
-            pnTotalAmount.TabIndex = 1;
-            // 
-            // lblTongTienHang
-            // 
-            lblTongTienHang.AutoSize = true;
-            lblTongTienHang.Location = new Point(416, 23);
-            lblTongTienHang.Name = "lblTongTienHang";
-            lblTongTienHang.Size = new Size(125, 22);
-            lblTongTienHang.TabIndex = 0;
-            lblTongTienHang.Text = "Tổng tiền hàng";
-            // 
-            // lblSoLuong
-            // 
-            lblSoLuong.AutoSize = true;
-            lblSoLuong.Location = new Point(551, 23);
-            lblSoLuong.Name = "lblSoLuong";
-            lblSoLuong.Size = new Size(20, 22);
-            lblSoLuong.TabIndex = 1;
-            lblSoLuong.Text = "1";
-            // 
-            // lblTongTienV
-            // 
-            lblTongTienV.AutoSize = true;
-            lblTongTienV.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTongTienV.Location = new Point(591, 23);
-            lblTongTienV.Name = "lblTongTienV";
-            lblTongTienV.Size = new Size(75, 23);
-            lblTongTienV.TabIndex = 2;
-            lblTongTienV.Text = "800,000";
-            // 
-            // btnThanhToan
-            // 
-            btnThanhToan.BorderRadius = 10;
-            btnThanhToan.CustomizableEdges = customizableEdges9;
-            btnThanhToan.DisabledState.BorderColor = Color.DarkGray;
-            btnThanhToan.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnThanhToan.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnThanhToan.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnThanhToan.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnThanhToan.ForeColor = Color.White;
-            btnThanhToan.Location = new Point(1125, 671);
-            btnThanhToan.Name = "btnThanhToan";
-            btnThanhToan.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            btnThanhToan.Size = new Size(225, 56);
-            btnThanhToan.TabIndex = 5;
-            btnThanhToan.Text = "Thanh toán";
-            // 
-            // lblKhachHang
-            // 
-            lblKhachHang.AutoSize = true;
-            lblKhachHang.ForeColor = Color.White;
-            lblKhachHang.Location = new Point(492, 22);
-            lblKhachHang.Name = "lblKhachHang";
-            lblKhachHang.Size = new Size(101, 22);
-            lblKhachHang.TabIndex = 3;
-            lblKhachHang.Text = "Khách hàng";
-            // 
-            // cbxKhachHang
-            // 
-            cbxKhachHang.BackColor = Color.Transparent;
-            cbxKhachHang.CustomizableEdges = customizableEdges3;
-            cbxKhachHang.DrawMode = DrawMode.OwnerDrawFixed;
-            cbxKhachHang.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbxKhachHang.FocusedColor = Color.FromArgb(94, 148, 255);
-            cbxKhachHang.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            cbxKhachHang.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cbxKhachHang.ForeColor = Color.FromArgb(68, 88, 112);
-            cbxKhachHang.ItemHeight = 30;
-            cbxKhachHang.Location = new Point(609, 12);
-            cbxKhachHang.Name = "cbxKhachHang";
-            cbxKhachHang.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            cbxKhachHang.Size = new Size(175, 36);
-            cbxKhachHang.TabIndex = 4;
             // 
             // cbxNhanVien
             // 
@@ -289,12 +93,125 @@
             lblNhanVien.TabIndex = 5;
             lblNhanVien.Text = "Nhân viên";
             // 
+            // cbxKhachHang
+            // 
+            cbxKhachHang.BackColor = Color.Transparent;
+            cbxKhachHang.CustomizableEdges = customizableEdges3;
+            cbxKhachHang.DrawMode = DrawMode.OwnerDrawFixed;
+            cbxKhachHang.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbxKhachHang.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbxKhachHang.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbxKhachHang.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbxKhachHang.ForeColor = Color.FromArgb(68, 88, 112);
+            cbxKhachHang.ItemHeight = 30;
+            cbxKhachHang.Location = new Point(609, 12);
+            cbxKhachHang.Name = "cbxKhachHang";
+            cbxKhachHang.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            cbxKhachHang.Size = new Size(175, 36);
+            cbxKhachHang.TabIndex = 4;
+            // 
+            // lblKhachHang
+            // 
+            lblKhachHang.AutoSize = true;
+            lblKhachHang.ForeColor = Color.White;
+            lblKhachHang.Location = new Point(492, 22);
+            lblKhachHang.Name = "lblKhachHang";
+            lblKhachHang.Size = new Size(101, 22);
+            lblKhachHang.TabIndex = 3;
+            lblKhachHang.Text = "Khách hàng";
+            // 
+            // tbxSearch
+            // 
+            tbxSearch.BorderRadius = 10;
+            tbxSearch.CustomizableEdges = customizableEdges5;
+            tbxSearch.DefaultText = "";
+            tbxSearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            tbxSearch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            tbxSearch.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            tbxSearch.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            tbxSearch.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            tbxSearch.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tbxSearch.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            tbxSearch.Location = new Point(13, 4);
+            tbxSearch.Margin = new Padding(4);
+            tbxSearch.Name = "tbxSearch";
+            tbxSearch.PasswordChar = '\0';
+            tbxSearch.PlaceholderText = "Tìm sản phẩm";
+            tbxSearch.SelectedText = "";
+            tbxSearch.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            tbxSearch.Size = new Size(441, 59);
+            tbxSearch.TabIndex = 2;
+            tbxSearch.TextChanged += tbxSearch_TextChanged;
+            // 
             // pnSearch
             // 
-            pnSearch.Location = new Point(18, 49);
+            pnSearch.FlowDirection = FlowDirection.TopDown;
+            pnSearch.Location = new Point(14, 69);
             pnSearch.Name = "pnSearch";
-            pnSearch.Size = new Size(579, 442);
+            pnSearch.Size = new Size(457, 442);
             pnSearch.TabIndex = 7;
+            pnSearch.Visible = false;
+            // 
+            // pnLeft
+            // 
+            pnLeft.AutoScroll = true;
+            pnLeft.BackColor = SystemColors.Control;
+            pnLeft.Location = new Point(3, 70);
+            pnLeft.Name = "pnLeft";
+            pnLeft.Size = new Size(723, 594);
+            pnLeft.TabIndex = 3;
+            // 
+            // pnRight
+            // 
+            pnRight.AutoScroll = true;
+            pnRight.Location = new Point(731, 69);
+            pnRight.Name = "pnRight";
+            pnRight.Size = new Size(632, 595);
+            pnRight.TabIndex = 4;
+            // 
+            // pnTotalAmount
+            // 
+            pnTotalAmount.Controls.Add(lblTong);
+            pnTotalAmount.Controls.Add(lblTongTienHang);
+            pnTotalAmount.Location = new Point(3, 671);
+            pnTotalAmount.Name = "pnTotalAmount";
+            pnTotalAmount.Size = new Size(723, 63);
+            pnTotalAmount.TabIndex = 1;
+            // 
+            // lblTong
+            // 
+            lblTong.AutoSize = true;
+            lblTong.Location = new Point(551, 23);
+            lblTong.Name = "lblTong";
+            lblTong.Size = new Size(20, 22);
+            lblTong.TabIndex = 1;
+            lblTong.Text = "1";
+            // 
+            // lblTongTienHang
+            // 
+            lblTongTienHang.AutoSize = true;
+            lblTongTienHang.Location = new Point(416, 23);
+            lblTongTienHang.Name = "lblTongTienHang";
+            lblTongTienHang.Size = new Size(125, 22);
+            lblTongTienHang.TabIndex = 0;
+            lblTongTienHang.Text = "Tổng tiền hàng";
+            // 
+            // btnThanhToan
+            // 
+            btnThanhToan.BorderRadius = 10;
+            btnThanhToan.CustomizableEdges = customizableEdges7;
+            btnThanhToan.DisabledState.BorderColor = Color.DarkGray;
+            btnThanhToan.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnThanhToan.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnThanhToan.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnThanhToan.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnThanhToan.ForeColor = Color.White;
+            btnThanhToan.Location = new Point(1125, 671);
+            btnThanhToan.Name = "btnThanhToan";
+            btnThanhToan.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnThanhToan.Size = new Size(225, 56);
+            btnThanhToan.TabIndex = 5;
+            btnThanhToan.Text = "Thanh toán";
             // 
             // Sell
             // 
@@ -302,6 +219,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1362, 733);
+            Controls.Add(pnSearch);
             Controls.Add(btnThanhToan);
             Controls.Add(pnRight);
             Controls.Add(pnTotalAmount);
@@ -314,10 +232,6 @@
             Text = "Sell";
             pnHeader.ResumeLayout(false);
             pnHeader.PerformLayout();
-            pnProduct.ResumeLayout(false);
-            pnProduct.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numeric).EndInit();
-            pnLeft.ResumeLayout(false);
             pnTotalAmount.ResumeLayout(false);
             pnTotalAmount.PerformLayout();
             ResumeLayout(false);
@@ -328,18 +242,11 @@
         private Panel pnHeader;
         private Guna.UI2.WinForms.Guna2TextBox tbxSearch;
         private Panel pnListProduct;
-        private Panel pnProduct;
-        private Label lblTongGia;
-        private Label lblGia;
-        private Guna.UI2.WinForms.Guna2NumericUpDown numeric;
-        private Label lblName;
-        private Label lblIndex;
         private FlowLayoutPanel pnLeft;
         private FlowLayoutPanel pnRight;
         private Panel pnTotalAmount;
         private Label lblTongTienHang;
-        private Label lblTongTienV;
-        private Label lblSoLuong;
+        private Label lblTong;
         private Guna.UI2.WinForms.Guna2ComboBox cbxNhanVien;
         private Label lblNhanVien;
         private Guna.UI2.WinForms.Guna2ComboBox cbxKhachHang;

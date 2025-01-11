@@ -37,7 +37,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblHeader = new Label();
-            pnImage = new Panel();
             pnLeft = new Panel();
             lblNgayHetHanV = new Label();
             lblNgayHetHan = new Label();
@@ -73,7 +72,7 @@
             panel1 = new Panel();
             lblDongGoiV = new Label();
             lblDongGoi = new Label();
-            label3 = new Label();
+            lblNuocSanXuatV = new Label();
             lblNuocSanXuat = new Label();
             lblHangSanXuatV = new Label();
             lblHangSanXuat = new Label();
@@ -93,9 +92,12 @@
             pnLineB1 = new Panel();
             lblMoTa = new Label();
             btnBack = new Guna.UI2.WinForms.Guna2Button();
+            lblMoTaV = new Label();
+            picBox = new PictureBox();
             pnLeft.SuspendLayout();
             pnFooter.SuspendLayout();
             pnRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picBox).BeginInit();
             SuspendLayout();
             // 
             // lblHeader
@@ -108,13 +110,6 @@
             lblHeader.Size = new Size(303, 32);
             lblHeader.TabIndex = 0;
             lblHeader.Text = "Bổ phế gia truyền (chai)";
-            // 
-            // pnImage
-            // 
-            pnImage.Location = new Point(12, 79);
-            pnImage.Name = "pnImage";
-            pnImage.Size = new Size(293, 247);
-            pnImage.TabIndex = 1;
             // 
             // pnLeft
             // 
@@ -380,6 +375,7 @@
             btnXoa.Size = new Size(177, 42);
             btnXoa.TabIndex = 5;
             btnXoa.Text = "Xóa";
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnNgungKinhDoanh
             // 
@@ -414,6 +410,7 @@
             btnUpdate.Size = new Size(177, 42);
             btnUpdate.TabIndex = 3;
             btnUpdate.Text = "Cập nhật";
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // pnRight
             // 
@@ -422,7 +419,7 @@
             pnRight.Controls.Add(panel1);
             pnRight.Controls.Add(lblDongGoiV);
             pnRight.Controls.Add(lblDongGoi);
-            pnRight.Controls.Add(label3);
+            pnRight.Controls.Add(lblNuocSanXuatV);
             pnRight.Controls.Add(lblNuocSanXuat);
             pnRight.Controls.Add(lblHangSanXuatV);
             pnRight.Controls.Add(lblHangSanXuat);
@@ -489,14 +486,14 @@
             lblDongGoi.TabIndex = 20;
             lblDongGoi.Text = "Quy cách đóng gói:";
             // 
-            // label3
+            // lblNuocSanXuatV
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(182, 278);
-            label3.Name = "label3";
-            label3.Size = new Size(20, 22);
-            label3.TabIndex = 19;
-            label3.Text = "0";
+            lblNuocSanXuatV.AutoSize = true;
+            lblNuocSanXuatV.Location = new Point(182, 278);
+            lblNuocSanXuatV.Name = "lblNuocSanXuatV";
+            lblNuocSanXuatV.Size = new Size(20, 22);
+            lblNuocSanXuatV.TabIndex = 19;
+            lblNuocSanXuatV.Text = "0";
             // 
             // lblNuocSanXuat
             // 
@@ -671,19 +668,37 @@
             btnBack.Text = "Back";
             btnBack.Click += btnBack_Click;
             // 
+            // lblMoTaV
+            // 
+            lblMoTaV.AutoSize = true;
+            lblMoTaV.Location = new Point(535, 475);
+            lblMoTaV.Name = "lblMoTaV";
+            lblMoTaV.Size = new Size(60, 22);
+            lblMoTaV.TabIndex = 13;
+            lblMoTaV.Text = "label1";
+            // 
+            // picBox
+            // 
+            picBox.Location = new Point(12, 69);
+            picBox.Name = "picBox";
+            picBox.Size = new Size(383, 342);
+            picBox.TabIndex = 14;
+            picBox.TabStop = false;
+            // 
             // ProductDetail
             // 
             AutoScaleDimensions = new SizeF(11F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(1340, 609);
+            Controls.Add(picBox);
+            Controls.Add(lblMoTaV);
             Controls.Add(btnBack);
             Controls.Add(lblMoTa);
             Controls.Add(pnRight);
             Controls.Add(pnFooter);
             Controls.Add(pnLeft);
             Controls.Add(pnLine7);
-            Controls.Add(pnImage);
             Controls.Add(lblHeader);
             Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
@@ -696,6 +711,7 @@
             pnFooter.ResumeLayout(false);
             pnRight.ResumeLayout(false);
             pnRight.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -703,7 +719,6 @@
         #endregion
 
         private Label lblHeader;
-        private Panel pnImage;
         private Panel pnLeft;
         private Panel pnFooter;
         private Guna.UI2.WinForms.Guna2Button btnNgungKinhDoanh;
@@ -732,7 +747,7 @@
         private Panel pnRight;
         private Label lblDongGoiV;
         private Label lblDongGoi;
-        private Label label3;
+        private Label lblNuocSanXuatV;
         private Label lblNuocSanXuat;
         private Label lblHangSanXuatV;
         private Label lblHangSanXuat;
@@ -764,5 +779,7 @@
         private Label lblHienTrangV;
         private Label lblHienTrang;
         private Panel panel1;
+        private Label lblMoTaV;
+        private PictureBox picBox;
     }
 }

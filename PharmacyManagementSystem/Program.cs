@@ -4,6 +4,7 @@ using PharmacyManagementSystem.Models;
 using static Guna.UI2.Native.WinApi;
 using System.IO;
 using PharmacyManagementSystem.Services;
+using PharmacyManagementSystem.View;
 
 
 namespace PharmacyManagementSystem
@@ -35,7 +36,8 @@ namespace PharmacyManagementSystem
             var mainForm = ServiceProvider.GetRequiredService<MainForm>();
 
             // Run application
-            Application.Run(mainForm);
+            //Application.Run(mainForm);
+            Application.Run(new Sell());
         }
     }
 }

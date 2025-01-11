@@ -78,7 +78,7 @@
             pnLeft = new Panel();
             cbxNhaCungCap = new Guna.UI2.WinForms.Guna2ComboBox();
             cbxNhomHang = new Guna.UI2.WinForms.Guna2ComboBox();
-            DateTime = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            dateTime = new Guna.UI2.WinForms.Guna2DateTimePicker();
             lblNgayHetHan = new Label();
             numericTonKho = new Guna.UI2.WinForms.Guna2NumericUpDown();
             lblTonKho = new Label();
@@ -86,6 +86,7 @@
             tbxGiaVon = new Guna.UI2.WinForms.Guna2TextBox();
             tbxGiaBan = new Guna.UI2.WinForms.Guna2TextBox();
             tbxTenVietTat = new Guna.UI2.WinForms.Guna2TextBox();
+            label1 = new Label();
             lblTenThuoc = new Label();
             pnLineA7 = new Panel();
             lblNhaCC = new Label();
@@ -132,7 +133,6 @@
             lblMoTa = new Label();
             lblAnh = new Label();
             picBox = new Guna.UI2.WinForms.Guna2PictureBox();
-            label1 = new Label();
             pnHeader.SuspendLayout();
             pnLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericTonKho).BeginInit();
@@ -183,7 +183,7 @@
             // 
             pnLeft.Controls.Add(cbxNhaCungCap);
             pnLeft.Controls.Add(cbxNhomHang);
-            pnLeft.Controls.Add(DateTime);
+            pnLeft.Controls.Add(dateTime);
             pnLeft.Controls.Add(lblNgayHetHan);
             pnLeft.Controls.Add(numericTonKho);
             pnLeft.Controls.Add(lblTonKho);
@@ -244,21 +244,21 @@
             cbxNhomHang.Size = new Size(277, 36);
             cbxNhomHang.TabIndex = 35;
             // 
-            // DateTime
+            // dateTime
             // 
-            DateTime.Checked = true;
-            DateTime.CustomizableEdges = customizableEdges7;
-            DateTime.FillColor = Color.FromArgb(94, 148, 255);
-            DateTime.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            DateTime.Format = DateTimePickerFormat.Long;
-            DateTime.Location = new Point(149, 370);
-            DateTime.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            DateTime.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            DateTime.Name = "DateTime";
-            DateTime.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            DateTime.Size = new Size(262, 44);
-            DateTime.TabIndex = 34;
-            DateTime.Value = new DateTime(2025, 1, 10, 21, 13, 7, 679);
+            dateTime.Checked = true;
+            dateTime.CustomizableEdges = customizableEdges7;
+            dateTime.FillColor = Color.FromArgb(94, 148, 255);
+            dateTime.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTime.Format = DateTimePickerFormat.Long;
+            dateTime.Location = new Point(149, 370);
+            dateTime.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            dateTime.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            dateTime.Name = "dateTime";
+            dateTime.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            dateTime.Size = new Size(262, 44);
+            dateTime.TabIndex = 34;
+            dateTime.Value = new DateTime(2025, 1, 10, 21, 13, 7, 679);
             // 
             // lblNgayHetHan
             // 
@@ -277,6 +277,7 @@
             numericTonKho.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             numericTonKho.Location = new Point(152, 164);
             numericTonKho.Margin = new Padding(3, 4, 3, 4);
+            numericTonKho.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
             numericTonKho.Name = "numericTonKho";
             numericTonKho.ShadowDecoration.CustomizableEdges = customizableEdges10;
             numericTonKho.Size = new Size(142, 39);
@@ -391,6 +392,15 @@
             tbxTenVietTat.ShadowDecoration.CustomizableEdges = customizableEdges18;
             tbxTenVietTat.Size = new Size(277, 43);
             tbxTenVietTat.TabIndex = 28;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(152, 17);
+            label1.Name = "label1";
+            label1.Size = new Size(141, 22);
+            label1.TabIndex = 26;
+            label1.Text = "Mã hàng tự động";
             // 
             // lblTenThuoc
             // 
@@ -899,6 +909,7 @@
             btnBoQua.Size = new Size(177, 42);
             btnBoQua.TabIndex = 5;
             btnBoQua.Text = "Bỏ qua";
+            btnBoQua.Click += btnBoQua_Click;
             // 
             // btnLuu
             // 
@@ -916,6 +927,7 @@
             btnLuu.Size = new Size(177, 42);
             btnLuu.TabIndex = 3;
             btnLuu.Text = "Lưu";
+            btnLuu.Click += btnLuu_Click;
             // 
             // pnImage
             // 
@@ -946,6 +958,7 @@
             btnChonAnh.Size = new Size(135, 35);
             btnChonAnh.TabIndex = 32;
             btnChonAnh.Text = "Chọn ảnh";
+            btnChonAnh.Click += btnChonAnh_Click;
             // 
             // tbxMoTa
             // 
@@ -986,7 +999,7 @@
             // 
             lblAnh.AutoSize = true;
             lblAnh.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
-            lblAnh.Location = new Point(14, 0);
+            lblAnh.Location = new Point(12, 10);
             lblAnh.Name = "lblAnh";
             lblAnh.Size = new Size(51, 23);
             lblAnh.TabIndex = 4;
@@ -1000,17 +1013,9 @@
             picBox.Name = "picBox";
             picBox.ShadowDecoration.CustomizableEdges = customizableEdges44;
             picBox.Size = new Size(163, 96);
+            picBox.SizeMode = PictureBoxSizeMode.Zoom;
             picBox.TabIndex = 0;
             picBox.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(152, 17);
-            label1.Name = "label1";
-            label1.Size = new Size(102, 22);
-            label1.TabIndex = 26;
-            label1.Text = "SP0128334";
             // 
             // ProductAdd
             // 
@@ -1091,7 +1096,7 @@
         private Guna.UI2.WinForms.Guna2NumericUpDown numericTonKho;
         private Guna.UI2.WinForms.Guna2ComboBox cbxNhaCungCap;
         private Guna.UI2.WinForms.Guna2ComboBox cbxNhomHang;
-        private Guna.UI2.WinForms.Guna2DateTimePicker DateTime;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dateTime;
         private Guna.UI2.WinForms.Guna2TextBox tbxDonViCoBan;
         private Label lblAnh;
         private Guna.UI2.WinForms.Guna2PictureBox picBox;

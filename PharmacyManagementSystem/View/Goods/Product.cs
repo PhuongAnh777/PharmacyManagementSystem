@@ -28,6 +28,7 @@ namespace PharmacyManagementSystem.View.Goods
         private bool _isAscending = true;
         private string _sortedColumn = "";        // Cột hiện đang sắp xếp
         private string _imageBasePath; // Đường dẫn gốc chứa ảnh
+        //public static bool _isDelete = false; 
         public Product()
         {
             InitializeComponent();
@@ -67,13 +68,8 @@ namespace PharmacyManagementSystem.View.Goods
             if (response != null)
             {
                 OpenChildForm(new ProductDetail(response));
-                //using (var detailForm = new CustomersDetails(customer, customerId))
-                //{
-                //    if (detailForm.ShowDialog() == DialogResult.OK)
-                //    {
-                //        await LoadCustomers(); // Cập nhật lại dữ liệu trong DataGridView
-                //    }
-                //}
+                await LoadProduct(); // Cập nhật lại dữ liệu trong DataGridView
+               
             }
             else
             {
@@ -130,7 +126,7 @@ namespace PharmacyManagementSystem.View.Goods
                             Name = product.Name,
                             Category = categoryName,
                             SellingPrice = (decimal)product.SellingPrice,
-                            OriginalPrice = product.OriginalPrice,
+                            OriginalPrice = (decimal)product.OriginalPrice,
                             StockQuantity = product.StockQuantity,
                         });
                     }
@@ -157,11 +153,12 @@ namespace PharmacyManagementSystem.View.Goods
 
                 if (row != null)
                 {
-                    string imagePath = Path.Combine(_imageBasePath, item.ImageName) + ".jpg";
 
-                    if (File.Exists(imagePath))
+                    if (item.ImageName != null)
                     {
-                        row.Cells["Image"].Value = System.Drawing.Image.FromFile(imagePath);
+                        string imagePath = Path.Combine(_imageBasePath, item.ImageName) + ".jpg";
+                        if (File.Exists(imagePath))
+                            row.Cells["Image"].Value = System.Drawing.Image.FromFile(imagePath);
                     }
                     else
                     {

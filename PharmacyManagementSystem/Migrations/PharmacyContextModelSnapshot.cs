@@ -222,7 +222,6 @@ namespace PharmacyManagementSystem.Migrations
                         .HasDefaultValueSql("NEWID()");
 
                     b.Property<string>("ActiveIngredient")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
@@ -240,8 +239,8 @@ namespace PharmacyManagementSystem.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<DateTime>("ExpiryDate")
-                        .HasColumnType("DATE");
+                    b.Property<DateTime?>("ExpiryDate")
+                        .HasColumnType("datetime");
 
                     b.Property<string>("Image")
                         .HasMaxLength(100)
@@ -253,7 +252,6 @@ namespace PharmacyManagementSystem.Migrations
                         .HasDefaultValue(false);
 
                     b.Property<string>("Manufacturer")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
@@ -270,7 +268,6 @@ namespace PharmacyManagementSystem.Migrations
                         .HasColumnType("decimal(10,2)");
 
                     b.Property<string>("Packaging")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
@@ -278,7 +275,7 @@ namespace PharmacyManagementSystem.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<decimal?>("SellingPrice")
+                    b.Property<decimal>("SellingPrice")
                         .HasColumnType("decimal(10,2)");
 
                     b.Property<int>("StockQuantity")

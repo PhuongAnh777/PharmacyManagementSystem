@@ -12,18 +12,18 @@ namespace PharmacyManagementSystem.Models
 
         public string Name { get; set; } // NVARCHAR(100)
 
-        public string ActiveIngredient { get; set; } // NVARCHAR(100)
+        public string? ActiveIngredient { get; set; } // NVARCHAR(100)
 
         public string? Dosage { get; set; } // NVARCHAR(50)
 
-        public string Packaging { get; set; } // NVARCHAR(100)
+        public string? Packaging { get; set; } // NVARCHAR(100)
 
         public string? Unit { get; set; } // NVARCHAR(50)
 
         public decimal OriginalPrice { get; set; } // DECIMAL(10, 2)
-        public decimal? SellingPrice { get; set; }
+        public decimal SellingPrice { get; set; }
         public string? Description { get; set; } // NVARCHAR(MAX)
-        public string Manufacturer { get; set; } // NVARCHAR(100)
+        public string? Manufacturer { get; set; } // NVARCHAR(100)
 
         public int StockQuantity { get; set; } // INT
 

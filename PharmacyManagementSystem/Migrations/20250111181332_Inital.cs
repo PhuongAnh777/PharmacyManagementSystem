@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace PharmacyManagementSystem.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class Inital : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -39,7 +39,9 @@ namespace PharmacyManagementSystem.Migrations
                     Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    Address = table.Column<string>(type: "NVARCHAR(MAX)", nullable: true)
+                    Address = table.Column<string>(type: "NVARCHAR(MAX)", nullable: true),
+                    Image = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    IsDiscontinued = table.Column<bool>(type: "bit", nullable: false, defaultValue: false)
                 },
                 constraints: table =>
                 {
@@ -67,7 +69,8 @@ namespace PharmacyManagementSystem.Migrations
                     Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    Address = table.Column<string>(type: "NVARCHAR(MAX)", nullable: true)
+                    Address = table.Column<string>(type: "NVARCHAR(MAX)", nullable: true),
+                    IsDiscontinued = table.Column<bool>(type: "bit", nullable: false, defaultValue: false)
                 },
                 constraints: table =>
                 {
@@ -92,25 +95,39 @@ namespace PharmacyManagementSystem.Migrations
                 columns: table => new
                 {
                     ProductID = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "NEWID()"),
+                    MedicineID = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    RegistrationNumber = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    CountryOfOrigin = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    ActiveIngredient = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Dosage = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    ActiveIngredient = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    Dosage = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     Packaging = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    Unit = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Price = table.Column<decimal>(type: "DECIMAL(10,2)", nullable: false),
+                    Unit = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    OriginalPrice = table.Column<decimal>(type: "decimal(10,2)", nullable: false),
+                    SellingPrice = table.Column<decimal>(type: "decimal(10,2)", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Manufacturer = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     StockQuantity = table.Column<int>(type: "int", nullable: false),
-                    ExpiryDate = table.Column<DateTime>(type: "DATE", nullable: false),
-                    CategoryID = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    ExpiryDate = table.Column<DateTime>(type: "datetime", nullable: true),
+                    CategoryID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    SupplierID = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    Image = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    IsDiscontinued = table.Column<bool>(type: "bit", nullable: false, defaultValue: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Products", x => x.ProductID);
                     table.ForeignKey(
-                        name: "FK_Medicines_MedicineCategories",
+                        name: "FK_Product_Category",
                         column: x => x.CategoryID,
                         principalTable: "Categories",
                         principalColumn: "CategoryID");
+                    table.ForeignKey(
+                        name: "FK_Products_Suppliers",
+                        column: x => x.SupplierID,
+                        principalTable: "Suppliers",
+                        principalColumn: "SupplierID",
+                        onDelete: ReferentialAction.SetNull);
                 });
 
             migrationBuilder.CreateTable(
@@ -120,10 +137,12 @@ namespace PharmacyManagementSystem.Migrations
                     EmployeeID = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "NEWID()"),
                     Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Gender = table.Column<bool>(type: "bit", nullable: false),
-                    Position = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     PhoneNumber = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    AccountID = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    DateOfBirth = table.Column<DateTime>(type: "datetime", nullable: true),
+                    AccountID = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    Image = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    IsDiscontinued = table.Column<bool>(type: "bit", nullable: false, defaultValue: false)
                 },
                 constraints: table =>
                 {
@@ -163,11 +182,12 @@ namespace PharmacyManagementSystem.Migrations
                 columns: table => new
                 {
                     OrderID = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "NEWID()"),
-                    CustomerID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    EmployeeID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CustomerID = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    EmployeeID = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     OrderDate = table.Column<DateTime>(type: "datetime", nullable: false, defaultValueSql: "(getdate())"),
                     TotalAmount = table.Column<decimal>(type: "DECIMAL(10,2)", nullable: false),
-                    PaymentMethod = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    PaymentMethod = table.Column<string>(type: "nvarchar(max)", nullable: false, defaultValue: "CASH"),
+                    Note = table.Column<string>(type: "NVARCHAR(MAX)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -300,6 +320,11 @@ namespace PharmacyManagementSystem.Migrations
                 name: "IX_Products_CategoryID",
                 table: "Products",
                 column: "CategoryID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Products_SupplierID",
+                table: "Products",
+                column: "SupplierID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_PurchaseDetails_ProductID",
